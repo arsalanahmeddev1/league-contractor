@@ -1,0 +1,966 @@
+:root {
+    --primary-theme: #94B02F;
+    --dark-primary-theme: #2E3313;
+    --secondry-theme: #FC7100;
+    --gradiant-them: linear-gradient(90deg, #FC7100 0%, #FF9640 100%);
+    --gradiant-theme-2: linear-gradient(180deg, #002767 0%, #000A19 100%);
+    --grey: #585353;
+    --dark-grey: #2F2E2E;
+    --grey-600: #646464;
+    --default-color: #fff;
+    --black: #000000;
+    --light-black: #1E1E1E;
+    --primary-font: "Poppins", sans-serif;
+    --secondry-font: "Big Shoulders", sans-serif;
+    --text-0: .0rem;
+    --text-1: .1rem;
+    --text-2: .2rem;
+    --text-3: .3rem;
+    --text-4: .4rem;
+    --text-5: .5rem;
+    --text-6: .6rem;
+    --text-7: .7rem;
+    --text-8: .8rem;
+    --text-9: .9rem;
+    --text-10: 1rem;
+    --text-11: 1.1rem;
+    --text-12: 1.2rem;
+    --text-13: 1.3rem;
+    --text-14: 1.4rem;
+    --text-15: 1.5rem;
+    --text-16: 1.6rem;
+    --text-17: 1.7rem;
+    --text-18: 1.8rem;
+    --text-19: 1.9rem;
+    --text-20: 2rem;
+    --text-21: 2.1rem;
+    --text-22: 2.2rem;
+    --text-23: 2.3rem;
+    --text-24: 2.4rem;
+    --text-25: 2.5rem;
+    --text-26: 2.6rem;
+    --text-27: 2.7rem;
+    --text-28: 2.8rem;
+    --text-29: 2.9rem;
+    --text-30: 3rem;
+    --text-31: 3.1rem;
+    --text-32: 3.2rem;
+    --text-33: 3.3rem;
+    --text-34: 3.4rem;
+    --text-35: 3.5rem;
+    --text-36: 3.6rem;
+    --text-37: 3.7rem;
+    --text-38: 3.8rem;
+    --text-39: 3.9rem;
+    --text-40: 4rem;
+    --text-41: 4.1rem;
+    --text-42: 4.2rem;
+    --text-43: 4.3rem;
+    --text-44: 4.4rem;
+    --text-45: 4.5rem;
+    --text-46: 4.6rem;
+    --text-47: 4.7rem;
+    --text-48: 4.8rem;
+    --text-49: 4.9rem;
+    --text-50: 5rem;
+    --text-51: 5.1rem;
+    --text-52: 5.2rem;
+    --text-53: 5.3rem;
+    --text-54: 5.4rem;
+    --text-55: 5.5rem;
+    --text-56: 5.6rem;
+    --text-57: 5.7rem;
+    --text-58: 5.8rem;
+    --text-59: 5.9rem;
+    --text-60: 6rem;
+    --text-61: 6.1rem;
+    --text-62: 6.2rem;
+    --text-63: 6.3rem;
+    --text-64: 6.4rem;
+    --text-65: 6.5rem;
+    --text-66: 6.6rem;
+    --text-67: 6.7rem;
+    --text-68: 6.8rem;
+    --text-69: 6.9rem;
+    --text-70: 7rem;
+    --text-71: 7.1rem;
+    --text-72: 7.2rem;
+    --text-73: 7.3rem;
+    --text-74: 7.4rem;
+    --text-75: 7.5rem;
+    --text-76: 7.6rem;
+    --text-77: 7.7rem;
+    --text-78: 7.8rem;
+    --text-79: 7.9rem;
+    --text-80: 8rem;
+    --text-81: 8.1rem;
+    --text-82: 8.2rem;
+    --text-83: 8.3rem;
+    --text-84: 8.4rem;
+    --text-85: 8.5rem;
+    --text-86: 8.6rem;
+    --text-87: 8.7rem;
+    --text-88: 8.8rem;
+    --text-89: 8.9rem;
+    --text-90: 9rem;
+    --text-91: 9.1rem;
+    --text-92: 9.2rem;
+    --text-93: 9.3rem;
+    --text-94: 9.4rem;
+    --text-95: 9.5rem;
+    --text-96: 9.6rem;
+    --text-97: 9.7rem;
+    --text-98: 9.8rem;
+    --text-99: 9.9rem;
+    --text-100: 10rem;
+    --text-101: 10.1rem;
+    --text-102: 10.2rem;
+    --text-103: 10.3rem;
+    --text-104: 10.4rem;
+    --text-105: 10.5rem;
+    --text-106: 10.6rem;
+    --text-107: 10.7rem;
+    --text-108: 10.8rem;
+    --text-109: 10.9rem;
+    --text-110: 11rem;
+    --text-111: 11.1rem;
+    --text-112: 11.2rem;
+    --text-113: 11.3rem;
+    --text-114: 11.4rem;
+    --text-115: 11.5rem;
+    --text-116: 11.6rem;
+    --text-117: 11.7rem;
+    --text-118: 11.8rem;
+    --text-119: 11.9rem;
+    --text-120: 12rem;
+    --text-121: 12.1rem;
+    --text-122: 12.2rem;
+    --text-123: 12.3rem;
+    --text-124: 12.4rem;
+    --text-125: 12.5rem;
+    --text-126: 12.6rem;
+    --text-127: 12.7rem;
+    --text-128: 12.8rem;
+    --text-129: 12.9rem;
+    --text-130: 13rem;
+    --text-131: 13.1rem;
+    --text-132: 13.2rem;
+    --text-133: 13.3rem;
+    --text-134: 13.4rem;
+    --text-135: 13.5rem;
+    --text-136: 13.6rem;
+    --text-137: 13.7rem;
+    --text-138: 13.8rem;
+    --text-139: 13.9rem;
+    --text-140: 14rem;
+    --text-141: 14.1rem;
+    --text-142: 14.2rem;
+    --text-143: 14.3rem;
+    --text-144: 14.4rem;
+    --text-145: 14.5rem;
+    --text-146: 14.6rem;
+    --text-147: 14.7rem;
+    --text-148: 14.8rem;
+    --text-149: 14.9rem;
+    --text-150: 15rem;
+    --bs-body-font-size: 1rem;
+    --bs-body-font-size: 16px;
+    font-size: 62.5%;
+}
+
+/* global css start */
+.row {
+    --bs-gutter-x: 3rem;
+}
+
+::-webkit-scrollbar {
+    width: var(--text-7);
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ececec;
+    border-radius: var(--text-10);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--secondry-theme);
+    border-radius: var(--text-10);
+}
+
+html {
+    font-size: 16px;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: var(--primary-font);
+    color: var(--black);
+}
+
+
+* :where(.bootstrap, .bootstrap *) {
+    font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+a,
+p,
+span,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.circle-md {
+    width: var(--text-40);
+    height: var(--text-40);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.para {
+    font-size: var(--text-20);
+    color: var(--default-color);
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.7px);
+    -webkit-backdrop-filter: blur(8.7px);
+    border: 1px solid rgba(255, 255, 255, 0.39);
+}
+
+img {
+    max-width: 100%;
+}
+
+/* global css end */
+/* header css start */
+.header {
+    top: var(--text-60);
+}
+
+.secondary-list a,
+.primary-navs a {
+    font-size: var(--text-18);
+    color: var(--default-color);
+}
+
+.secondary-list a,
+.primary-navs a {
+    position: relative;
+}
+
+.secondary-list a::after,
+.primary-navs a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--default-color);
+    transition: all 0.4s ease;
+    color: var(--primary-theme);
+}
+
+.secondary-list a:hover::after,
+.primary-navs a:hover::after {
+    width: 100%;
+    background-color: var(--primary-theme);
+}
+
+.primary-navs a:hover {
+    color: var(--primary-theme);
+}
+
+.secondary-list a:hover {
+    color: var(--secondry-theme);
+}
+
+.secondary-list a:hover::after {
+    background-color: var(--secondry-theme);
+}
+
+.join-now-btn {
+    background-color: var(--default-color);
+    border-radius: var(--text-60);
+    font-size: var(--text-18);
+    padding: var(--text-15) var(--text-10) var(--text-15) var(--text-27);
+    width: 100%;
+    max-width: 17rem;
+}
+
+.join-now-btn .header-btn {
+    font-size: var(--text-18);
+    color: var(--black);
+}
+
+.v-line-sm {
+    width: 1px;
+    height: var(--text-30);
+    background-color: #FFFFFF;
+}
+
+.join-now-arrow {
+    right: 5px;
+}
+
+/* header css end */
+/* home css */
+
+.hero-banner {
+    background: linear-gradient(180deg, #000000b3 0%, #000000b3 100%), url('../../public/images/hero-bg.png') no-repeat center / cover;
+    padding: 30rem 0 21.3rem 0;
+}
+
+.tagline {
+    color: var(--default-color);
+    font-size: var(--text-22);
+    padding: var(--text-14) var(--text-31);
+}
+
+.hd-lg {
+    color: var(--default-color);
+    font-size: var(--text-90);
+    font-weight: 700;
+    font-family: var(--secondry-font);
+}
+
+.btn {
+    color: var(--default-color);
+    font-size: var(--text-18);
+    padding: var(--text-15) var(--text-36);
+    border-radius: var(--text-60);
+    border: none;
+    transition: all 0.4s ease;
+}
+
+.btn-primary {
+    background-color: var(--secondry-theme);
+    color: var(--default-color);
+}
+
+.btn-secondary {
+    background-color: var(--primary-theme);
+    color: var(--default-color);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid var(--primary-theme);
+}
+
+.btn-outline:hover {
+    background-color: var(--secondry-theme);
+    color: var(--default-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-theme);
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondry-theme);
+}
+
+.hd-md {
+    font-size: var(--text-60);
+}
+
+.form-wrapper {
+    padding: var(--text-55) var(--text-40);
+}
+
+.input-field {
+    width: 100%;
+    padding: var(--text-19) var(--text-39);
+    color: var(--default-color);
+    font-size: var(--text-20);
+    border-radius: var(--text-18);
+}
+
+.input-field::placeholder {
+    color: var(--default-color);
+}
+
+.submit-btn {
+    border-radius: var(--text-18);
+}
+
+.sec-gap {
+    padding: var(--text-140) 0 0 0;
+}
+
+.sec-gap-y {
+    padding: var(--text-140) 0;
+}
+
+.sec-gap-120 {
+    padding: var(--text-120) 0;
+}
+
+.hiw-card {
+    background-color: #3F461D;
+    color: var(--default-color);
+    border-radius: var(--text-36);
+    padding: var(--text-30) var(--text-56);
+}
+
+.sec-dark-bg {
+    background-color: var(--dark-primary-theme);
+}
+
+.circle-lg {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background-color: #3F461D;
+}
+
+.outline-heading {
+    color: transparent;
+    -webkit-text-stroke: 2px #ffffff1a;
+    stroke: #ffffff52;
+    font-size: 23.6rem;
+    position: absolute;
+    top: -105px;
+    right: 40px;
+    font-family: var(--secondry-font);
+    font-weight: 700;
+}
+
+.hiw-card {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.hiw-card .hd-md {
+    font-size: var(--text-50);
+}
+
+.arrows-wrapper .circle-md {
+    border: 1px solid var(--primary-theme);
+    color: var(--default-color);
+    width: var(--text-50);
+    height: var(--text-50);
+    background-color: transparent;
+}
+
+.featured-img-wrapper img {
+    border-radius: var(--text-30);
+}
+
+.hd-sm {
+    font-size: var(--text-32);
+}
+
+.featured-content-wrapper .btn {
+    padding: var(--text-13) var(--text-36);
+}
+
+.verified-badge-wrapper {
+    right: 30px;
+    bottom: -34px;
+}
+
+.featured-slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.featured-slider {
+    padding-left: 15px;
+    padding-right: 0;
+}
+
+.service-cat-slider .slick-slide,
+.featured-slider .slick-slide {
+    margin: 0 10px;
+}
+
+.featured-slider .slick-list {
+    padding-left: 0 !important;
+}
+
+.theme-border {
+    border: 0.7px solid #5E5E5E;
+}
+
+.tagline-sm {
+    padding: var(--text-11) var(--text-31);
+}
+
+.hd-45 {
+    font-size: var(--text-45);
+}
+
+.arrows-wrapper .circle-md {
+    transition: all 0.4s ease-in-out;
+}
+
+.arrows-wrapper .circle-md:hover {
+    background-color: var(--secondry-theme);
+
+}
+
+.wjl-icon-01 {
+    bottom: -31px;
+    right: -34px;
+    max-width: var(--text-100);
+}
+
+.sec-bg-light {
+    background-color: #3F461D;
+}
+
+.wjl-item .circle-md {
+    width: var(--text-25);
+    height: var(--text-25);
+}
+
+.wjl-item .circle-md i {
+    color: #3F461D;
+}
+
+.why-join-league-img-wrapper {
+    max-width: 40rem;
+}
+
+.pkg-wrapper {
+    padding: var(--text-85) var(--text-55);
+    background: #0000001A;
+    border-radius: var(--text-15);
+    position: relative;
+    height: 100%;
+}
+
+.pkg-list {
+    padding-left: var(--text-30);
+    margin-bottom: var(--text-60);
+}
+
+.pkg-list-item {
+    position: relative;
+    font-size: var(--text-18);
+    color: var(--default-color);
+    margin-bottom: var(--text-30);
+}
+
+.pkg-list-item::before {
+    content: '\f00c';
+    font-family: 'Font Awesome 7 Free';
+    font-size: var(--text-10);
+    font-weight: 900;
+    position: absolute;
+    top: 5px;
+    left: -33px;
+    width: var(--text-20);
+    height: var(--text-20);
+    background-color: var(--secondry-theme);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #292E11;
+}
+
+.pkg-wrapper .btn {
+    border-radius: var(--text-11);
+    position: absolute;
+    left: 0;
+    bottom: 31px;
+    max-width: 90%;
+    margin: 0 auto;
+    right: 0;
+}
+
+.popular-badge {
+    background: var(--gradiant-them);
+    padding: var(--text-12) var(--text-26);
+    position: absolute;
+    top: 0;
+    right: var(--text-30);
+    border-radius: 0 0 var(--text-8) var(--text-8);
+}
+
+.badge-text {
+    color: var(--default-color);
+    font-family: var(--secondry-font);
+    font-weight: 500;
+    font-size: var(--text-28);
+}
+
+.price-text {
+    font-size: var(--text-70);
+}
+
+.packages-sec {
+    padding-bottom: 19rem;
+}
+
+.jl-lg-card {
+    background: url('../../public/images/jl-bg.png') no-repeat center / cover;
+    padding: var(--text-100);
+    position: relative;
+    border-radius: var(--text-50);
+    height: 100%;
+    z-index: 2;
+    overflow: visible;
+}
+
+.btn-black {
+    background-color: var(--black);
+}
+
+.jl-lg-card-img-wrapper {
+    max-width: 51.5rem;
+    right: var(--text-30);
+
+}
+
+.about-us-list-item-title {
+    color: var(--primary-theme);
+    font-family: var(--secondry-font);
+}
+
+.about-us-list-item p {
+    font-size: var(--text-18);
+}
+
+.partners-card-wrapper {
+    background-color: #3F461D;
+    padding: var(--text-50);
+    border-radius: var(--text-23);
+}
+
+.read-more-btn {
+    color: var(--secondry-theme);
+    font-size: var(--text-18);
+    text-decoration: underline;
+}
+
+.conact-sec-card .icon-wrapper {
+    color: var(--secondry-theme);
+}
+
+.contact-sec-card-item,
+.contact-sec-card-item-link {
+    color: var(--default-color);
+    font-size: var(--text-20);
+}
+
+.conact-sec-card {
+    padding: var(--text-35) var(--text-55);
+    max-width: 74.9rem;
+}
+
+.contact-sec-left-img {
+    width: 100%;
+    left: 30px;
+    bottom: 0;
+}
+
+.secondary-list-title {
+    font-size: var(--text-25);
+    font-weight: 700;
+    font-family: var(--secondry-font);
+    color: var(--default-color);
+    margin-bottom: var(--text-15);
+}
+
+.secondary-list li {
+    margin-bottom: var(--text-15);
+}
+
+.footer-top .contact-sec-card-item-link {
+    font-size: var(--text-18);
+}
+
+.contact-sec-card-item {
+    font-family: var(--secondry-font);
+}
+
+.footer-top .contact-sec-card-item {
+    font-family: var(--primary-font);
+}
+
+.wjl-item .hd-45 {
+    font-size: var(--text-40);
+}
+
+.service-cat-card {
+    padding: var(--text-10) 0;
+}
+
+.close-icon i,
+.menu-icon i {
+    display: none;
+}
+.featured-card {
+    padding: var(--text-10) 0;
+}
+/* responsive */
+@media (min-width: 576px) {
+    .featured-slider {
+        padding-left: max(15px, calc((100% - 540px) / 2 + 15px));
+    }
+}
+
+@media (min-width: 768px) {
+    .featured-slider {
+        padding-left: max(15px, calc((100% - 720px) / 2 + 15px));
+    }
+}
+
+@media (min-width: 992px) {
+    .featured-slider {
+        padding-left: max(15px, calc((100% - 960px) / 2 + 15px));
+    }
+}
+
+@media (min-width: 1200px) {
+    .featured-slider {
+        padding-left: max(15px, calc((100% - 1350px) / 2 + 15px));
+    }
+}
+
+@media (min-width: 1280px) {
+    .featured-slider {
+        padding-left: max(15px, calc((100% - 1180px) / 2 + 15px));
+    }
+}
+
+@media (min-width: 1300px) {
+    .featured-slider {
+        padding-left: max(15px, calc((100% - 1190px) / 2 + 15px));
+    }
+}
+
+@media (min-width: 1400px) {
+    .featured-slider {
+        padding-left: max(15px, calc((100% - 1350px) / 2 + 15px));
+    }
+}
+
+@media (min-width: 1560px) {
+    .featured-slider {
+        padding-left: max(15px, calc((100% - 1440px) / 2 + 15px));
+    }
+}
+
+@media (min-width: 1560px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+
+@media (max-width: 1440px) {
+    :root {
+        font-size: 58%;
+    }
+
+    .hd-lg {
+        font-size: var(--text-65);
+    }
+
+    .hd-lg.hd-sm {
+        font-size: var(--text-35);
+    }
+
+    .para {
+        font-size: var(--text-18);
+    }
+
+    .hiw-card .hd-md {
+        font-size: var(--text-45);
+    }
+
+    .jl-lg-card .hd-lg {
+        max-width: 62rem;
+    }
+
+    .conact-sec-card {
+        padding: var(--text-35) var(--text-20);
+        max-width: 61.9rem;
+    }
+
+    .contact-sec-card-item,
+    .contact-sec-card-item-link {
+        font-size: var(--text-18);
+    }
+}
+
+@media (max-width: 1366px) {
+    :root {
+        font-size: 54%;
+    }
+
+    .why-join-league-sec .para {
+        font-size: var(--text-18);
+    }
+
+    .hiw-card {
+        padding: var(--text-30) var(--text-30);
+    }
+
+    .outline-heading {
+        font-size: 20.6rem;
+        top: -78px;
+        right: 10px;
+    }
+
+    .why-join-league-img-wrapper {
+        max-width: 33rem;
+    }
+}
+
+@media (max-width: 1280px) {
+    .footer-top .contact-sec-card-item-link {
+        font-size: var(--text-13);
+    }
+}
+
+@media (max-width: 1024px) {
+    .hd-lg {
+        font-size: var(--text-45);
+    }
+
+    .why-join-league-img-wrapper {
+        max-width: 28rem;
+    }
+
+    .pkg-wrapper {
+        padding: var(--text-85) var(--text-30);
+    }
+
+    .jl-lg-card .hd-lg {
+        max-width: 49rem;
+    }
+}
+
+@media (max-width: 991px) {
+
+    /* <---------mobile menu----------> */
+    .close-icon i,
+    .menu-icon i {
+        display: block;
+        z-index: 2;
+        background: var(--secondry-theme);
+        width: 3.5rem;
+        height: 3.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        /* position: absolute;
+    top: 38px;
+    right: 10px; */
+        border-radius: 2px;
+    }
+
+    .close-icon i {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        border-radius: 100%;
+    }
+
+    .primary-navs {
+        transform: translateX(-100%);
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        max-width: 300px;
+        transition: all ease-in-out 1s;
+        padding: 4.4rem 0;
+        z-index: 2;
+        background-color: var(--primary-theme);
+        overflow: auto;
+        box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+        border-top-right-radius: var(--text-30);
+        align-items: start !important;
+        padding-left: var(--text-30);
+    }
+
+    .primary-navs.active {
+        transform: translateX(0);
+    }
+
+    .primary-navs a:hover {
+        color: var(--secondry-theme);
+    }
+
+    .primary-navs a:hover::after {
+        background-color: var(--secondry-theme);
+    }
+    .footer-top .contact-sec-card-item-link {
+        font-size: var(--text-17);
+    }
+}
+
+@media (max-width: 767px) {
+    .logo {
+        max-width: 90px;
+    }
+    .hero-banner {
+        text-align: center;
+        padding: 25rem 0 10.3rem 0;
+    } 
+    .jl-lg-card {
+        padding: var(--text-50) var(--text-30);
+    }
+}
+@media (max-width: 480px) {
+    .btn {
+        font-size: var(--text-16);
+        padding: var(--text-15) var(--text-22);
+    }
+    .sec-gap {
+        padding: var(--text-80) 0 0 0;
+    }
+    .sec-gap-y {
+        padding: var(--text-80) 0;
+    }
+    .packages-sec {
+        padding-bottom: var(--text-80);
+    }
+    .why-join-league-img-wrapper {
+        max-width: 40rem;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 400px) {
+    .container {
+        padding:  0 10px;
+    }
+
+}
