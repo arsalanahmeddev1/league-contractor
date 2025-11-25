@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.web.master')
 @section('title', 'Home')
 @section('content')
 
@@ -282,7 +282,7 @@
                     <h2 class="hd-lg mb-40">Why Join the League</h2>
                     <div class="row row-gap-40">
                         <div class="col-lg-6">
-                            <div class="d-flex wjl-item align-items-center justify-content-center justify-md-start mb-20 gap-20">
+                            <div class="d-flex wjl-item align-items-center justify-content-center justify-content-md-start mb-20 gap-20">
                                 <div class="circle-md bg-secondry-theme">
                                     <i class="fa-solid fa-check"></i>
                                 </div>
@@ -293,7 +293,7 @@
                             </p>
                         </div>
                         <div class="col-lg-6">
-                            <div class="d-flex wjl-item align-items-center justify-content-center justify-md-start mb-20 gap-20">
+                            <div class="d-flex wjl-item align-items-center justify-content-center justify-content-md-start mb-20 gap-20">
                                 <div class="circle-md bg-secondry-theme">
                                     <i class="fa-solid fa-check"></i>
                                 </div>
@@ -304,7 +304,7 @@
                             </p>
                         </div>
                         <div class="col-lg-6">
-                            <div class="d-flex wjl-item align-items-center justify-content-center justify-md-start mb-20 gap-20">
+                            <div class="d-flex wjl-item align-items-center justify-content-center justify-content-md-start mb-20 gap-20">
                                 <div class="circle-md bg-secondry-theme">
                                     <i class="fa-solid fa-check"></i>
                                 </div>
@@ -315,7 +315,7 @@
                             </p>
                         </div>
                         <div class="col-lg-6">
-                            <div class="d-flex wjl-item align-items-center justify-content-center justify-md-start mb-20 gap-20">
+                            <div class="d-flex wjl-item align-items-center justify-content-center justify-content-md-start mb-20 gap-20">
                                 <div class="circle-md bg-secondry-theme">
                                     <i class="fa-solid fa-check"></i>
                                 </div>
@@ -330,56 +330,7 @@
             </div>
         </div>
     </section>
-    <section class="packages-sec sec-dark-bg">
-        <div class="container">
-            <div class="row row-gap-40">
-                <div class="col-12">
-                    <h2 class="hd-lg text-center text-md-start">Membership Tiers</h2>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="pkg-wrapper glass">
-                        <h4 class="hd-lg hd-sm mb-20">Basic Member</h4>
-                        <h4 class="hd-lg price-text mb-30">$0/month</h4>
-                        <ul class="pkg-list position-relative">
-                            <li class="pkg-list-item">Create a limited profile</li>
-                            <li class="pkg-list-item">Browse verified members</li>
-                            <li class="pkg-list-item">Receive occasional public leads</li>
-                        </ul>
-                        <a href="" class="btn btn-secondary w-100">Join Now</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="pkg-wrapper glass">
-                        <div class="popular-badge">
-                            <span class="badge-text">Most Popular</span>
-                        </div>
-                        <h4 class="hd-lg hd-sm mb-20">Pro Member</h4>
-                        <h4 class="hd-lg price-text mb-30">$49/month</h4>
-                        <ul class="pkg-list position-relative">
-                            <li class="pkg-list-item">Verified contractor listing</li>
-                            <li class="pkg-list-item">Access referral & rebate system</li>
-                            <li class="pkg-list-item">Add products/services in the marketplace</li>
-                            <li class="pkg-list-item">Participate in county exclusivity</li>
-                        </ul>
-                        <a href="" class="btn btn-secondary w-100">Join Now</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="pkg-wrapper glass">
-                        <h4 class="hd-lg hd-sm mb-20">Elite Member</h4>
-                        <h4 class="hd-lg price-text mb-30">$99/month</h4>
-                        <ul class="pkg-list position-relative">
-                            <li class="pkg-list-item">Top-tier visibility</li>
-                            <li class="pkg-list-item">Featured listing in your county</li>
-                            <li class="pkg-list-item">Increased referral commission rates</li>
-                            <li class="pkg-list-item">Direct access to strategic partner perks</li>
-                        </ul>
-                        <a href="" class="btn btn-secondary w-100">Join Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <x-sections.packages />
     <section class="join-league-sec sec-dark-bg">
         <div class="container">
             <div class="jl-lg-card position-relative">
@@ -454,7 +405,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="con-place-card-wrapper">
                         <div class="img-wrapper">
-                            <img class="mb-30" src="{{ asset('images/con-place-01.png') }}"
+                            <img class="" src="{{ asset('images/con-place-01.png') }}"
                                 alt="Contractor Marketplace Image">
                         </div>
                         <div class="content-wrapper">
@@ -468,7 +419,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="con-place-card-wrapper">
                         <div class="img-wrapper">
-                            <img class="mb-30" src="{{ asset('images/con-place-02.png') }}"
+                            <img class="" src="{{ asset('images/con-place-02.png') }}"
                                 alt="Contractor Marketplace Image">
                         </div>
                         <div class="content-wrapper">
@@ -481,7 +432,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="con-place-card-wrapper">
                         <div class="img-wrapper">
-                            <img class="mb-30" src="{{ asset('images/con-place-03.png') }}"
+                            <img class="" src="{{ asset('images/con-place-03.png') }}"
                                 alt="Contractor Marketplace Image">
                         </div>
                         <div class="content-wrapper">
@@ -494,7 +445,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="con-place-card-wrapper">
                         <div class="img-wrapper">
-                            <img class="mb-30" src="{{ asset('images/con-place-04.png') }}"
+                            <img class="" src="{{ asset('images/con-place-04.png') }}"
                                 alt="Contractor Marketplace Image">
                         </div>
                         <div class="content-wrapper">

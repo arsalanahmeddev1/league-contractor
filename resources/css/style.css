@@ -259,7 +259,7 @@ img {
 /* global css end */
 /* header css start */
 .header {
-    top: var(--text-60);
+    top: var(--text-30);
 }
 
 .secondary-list a,
@@ -725,6 +725,120 @@ img {
 .featured-card {
     padding: var(--text-10) 0;
 }
+.inner-page .header {
+    background-color: #3F461D;
+    padding: var(--text-30) 0;
+}
+.about-banner {
+    background: linear-gradient(180deg, #000000b3 0%, #000000b3 100%), url('../../public/images/hero-bg.png') no-repeat center / cover;
+    padding: 10rem 0;
+}
+.cricle-theme-secondary {
+    background-color: var(--secondry-theme);
+}
+.services-filters-wrapper .accordion-button {
+    font-size: var(--text-20);
+}
+.btn-sm {
+    padding: var(--text-10) var(--text-20);
+    font-size: var(--text-12);
+}
+.services-filters-wrapper .accordion-button:not(.collapsed) {
+    background-color: var(--primary-theme);
+}
+.services-filters-wrapper .accordion-button {
+    background-color: var(--dark-primary-theme);
+    color: var(--default-color);
+    box-shadow: none;
+} 
+.services-filters-wrapper .accordion-item {
+    border-color: #5E5E5E;
+    color: var(--default-color);
+    background-color: var(--dark-primary-theme);
+}
+.services-filters-wrapper .accordion-button::after {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(29%) saturate(901%) hue-rotate(21deg) brightness(118%) contrast(99%);
+    opacity: 1;
+}
+.input-field.field-sm {
+    padding: var(--text-15) var(--text-20);
+    border-radius: var(--text-10);
+    font-size: var(--text-14);
+}
+.selct-field option {
+    color: var(--black);
+}
+.services-profile-img img {
+    border-radius: 50%;
+    width: var(--text-50);
+    height: var(--text-50);
+    object-fit: cover;
+}
+.online-badge-wrapper {
+    border: 1px solid var(--default-color);
+    background-color: var(--primary-theme);
+    border-radius: 50%;
+    width: var(--text-10);
+    height: var(--text-10);
+    right: 0;
+    bottom: 5px;
+}
+.services-card-wrapper .img-wrapper img {
+    border-radius: var(--text-10) var(--text-10) 0 0;
+}
+/* Membership Tabs Styling */
+.nav-tabs {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+.nav-tabs .nav-link {
+    color: var(--default-color);
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: var(--text-15) var(--text-30);
+    font-size: var(--text-20);
+    font-family: var(--secondry-font);
+    font-weight: 500;
+    margin-bottom: -2px;
+    transition: all 0.3s ease;
+}
+.nav-tabs .nav-link:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+    color: var(--secondry-theme);
+}
+.nav-tabs .nav-link.active {
+    color: var(--secondry-theme);
+    background-color: transparent;
+    border-color: var(--secondry-theme);
+    border-bottom-color: var(--secondry-theme);
+}
+.tab-content {
+    margin-top: var(--text-40);
+}
+.contact-info-left-content .circle-lg {
+    width: var(--text-80);
+    height: var(--text-80);
+}
+.contact-info-left-content .circle-lg i {
+    color: var(--default-color);
+    font-size: var(--text-20);
+}
+.con-place-card-wrapper .img-wrapper {
+    background-color: var(--default-color);
+    border-radius: var(--text-30);
+}
+.con-place-card-wrapper.marketplace-card-wrapper {
+    background-color: #3F461D;
+    border-radius: var(--text-20);
+}
+
+.con-place-card-wrapper.marketplace-card-wrapper .content-wrapper {
+    padding: var(--text-30) var(--text-20);
+}
+.content-wrapper {
+    padding: var(--text-30) 0;
+}
+
 /* responsive */
 @media (min-width: 576px) {
     .featured-slider {
