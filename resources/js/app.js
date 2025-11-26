@@ -58,5 +58,34 @@ $(document).ready(function () {
       }
     ]
   });
+
+  $('.service-detail-main-slider').slick({
+    dots: false,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: true,
+    prevArrow: '<button type="button" class="slick-prev"><i class="fa-solid fa-chevron-left"></i></button>',
+    nextArrow: '<button type="button" class="slick-next"><i class="fa-solid fa-chevron-right"></i></button>',
+    appendDots: '.service-detail-slider-dots',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          dots: true
+        }
+      }
+    ]
+  });
+
+  // $('.dropdown-menu-btn').hover(function () {
+  //   $(this).parent().find('.dropdown-menu-wrapper').addClass('show');
+  // }, function () {
+  //   $(this).parent().find('.dropdown-menu-wrapper').removeClass('show');
+  // });
 });
 

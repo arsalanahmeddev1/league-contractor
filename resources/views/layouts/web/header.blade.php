@@ -16,18 +16,29 @@
                         <li><a href="{{ route('about') }}">About</a></li>
                         <li><a href="{{ route('services') }}">Services</a></li>
                         <li><a href="{{ route('membership') }}">Membership</a></li>
-                        <li><a href="{{ route('marketplace') }}">Marketplace</a></li>
+                        <li class="position-relative">
+                            <a href="#" class="dropdown-menu-btn">Marketplace <i class="fa-solid fa-chevron-down" style="font-size: 0.7em; margin-left: 5px;"></i></a>
+                            <div class="dropdown-menu-wrapper">
+                                <ul>
+                                    <li><a href="{{ route('marketplace') }}">Browse Contractors</a></li>
+                                    <li><a href="{{ route('products') }}">All Products</a></li>
+                                </ul>
+                            </div>
+                        </li>
                         <li><a href="{{ route('referrals') }}">Referrals</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="col-lg-3 col-8 d-flex gap-20 justify-content-end align-items-center">
                 <div class="d-flex align-items-center flex-grow-1 justify-content-between"
-                    style="max-width: 270px;">
-                    <a href="" class="bootstrap text-white">Login</a>
+                    style="max-width: 310px;">
+                    <a href="{{route('cart')}}" class="cart-icon d-flex align-items-center justify-content-center">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                    <a href="{{route('login')}}" class="bootstrap text-white">Login</a>
                     <div class="v-line-sm"></div>
                     <div class="join-now-btn position-relative">
-                        <a href="#" class="bootstrap header-btn">Join Now </a>
+                        <a href="{{route('join')}}" class="bootstrap header-btn">Join Now </a>
                         <div
                             class="circle-md bg-primary-theme join-now-arrow top-50 translate-middle-y position-absolute">
                             <span class="text-white fs-16"><i class="fa-solid fa-arrow-right"></i></span></div>
