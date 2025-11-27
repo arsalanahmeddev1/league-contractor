@@ -64,7 +64,7 @@
                                 <div class="text-center">
                                     <p class="text-white fs-14 mb-10">
                                         Don't have an account? 
-                                        <a href="{{ route('join') }}" class="text-secondry-theme fw-600">Join Now</a>
+                                        <a href="{{ route('register') }}" class="text-secondry-theme fw-600">Join Now</a>
                                     </p>
                                 </div>
                             </div>

@@ -7,7 +7,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="pkg-wrapper glass">
                     <h4 class="hd-lg hd-sm mb-20">Basic Member</h4>
-                    <h4 class="hd-lg price-text mb-30">$0/month</h4>
+                    <h4 class="hd-lg price-text mb-30">$20<span class="fs-30">/month</span></h4>
                     <ul class="pkg-list position-relative">
                         <li class="pkg-list-item">Create a limited profile</li>
                         <li class="pkg-list-item">Browse verified members</li>
@@ -22,7 +22,7 @@
                         <span class="badge-text">Most Popular</span>
                     </div>
                     <h4 class="hd-lg hd-sm mb-20">Pro Member</h4>
-                    <h4 class="hd-lg price-text mb-30">$49/month</h4>
+                    <h4 class="hd-lg price-text mb-30">$49<span class="fs-30">/month</span></h4>
                     <ul class="pkg-list position-relative">
                         <li class="pkg-list-item">Verified contractor listing</li>
                         <li class="pkg-list-item">Access referral & rebate system</li>
@@ -35,7 +35,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="pkg-wrapper glass">
                     <h4 class="hd-lg hd-sm mb-20">Elite Member</h4>
-                    <h4 class="hd-lg price-text mb-30">$99/month</h4>
+                    <h4 class="hd-lg price-text mb-30">$99<span class="fs-30">/month</span></h4>
                     <ul class="pkg-list position-relative">
                         <li class="pkg-list-item">Top-tier visibility</li>
                         <li class="pkg-list-item">Featured listing in your county</li>

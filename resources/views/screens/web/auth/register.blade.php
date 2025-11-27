@@ -78,19 +78,19 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 mb-20">
+                            {{-- <div class="col-12 mb-20">
                                 <div class="field-wrapper">
                                     <label for="licenseNumber" class="text-white fs-14 mb-10 d-block">License Number</label>
                                     <input type="text" id="licenseNumber" name="licenseNumber" class="glass input-field" placeholder="Enter your contractor license number">
                                 </div>
-                            </div>
+                            </div> --}}
 
-                            <div class="col-12 mb-20">
+                            {{-- <div class="col-12 mb-20">
                                 <div class="field-wrapper">
                                     <label for="companyName" class="text-white fs-14 mb-10 d-block">Company Name</label>
                                     <input type="text" id="companyName" name="companyName" class="glass input-field" placeholder="Your company name">
                                 </div>
-                            </div>
+                            </div> --}}
 
                             <div class="col-12 mb-20">
                                 <div class="form-check">

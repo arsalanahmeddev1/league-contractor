@@ -74,7 +74,7 @@
                                     'title' => 'Power Drill Set',
                                     'description' => 'Professional grade power drill set with multiple attachments',
                                     'price' => '$299.99',
-                                    'rating' => 5,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                     'cartUrl' => route('cart'),
                                 ],
@@ -83,7 +83,7 @@
                                     'title' => 'Safety Helmet',
                                     'description' => 'Industrial grade safety helmet with adjustable straps',
                                     'price' => '$49.99',
-                                    'rating' => 4,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                     'cartUrl' => route('cart'),
                                 ],
@@ -92,7 +92,7 @@
                                     'title' => 'Measuring Tools',
                                     'description' => 'Precision measuring tools set for construction work',
                                     'price' => '$89.99',
-                                    'rating' => 5,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                     'cartUrl' => route('cart'),
                                 ],
@@ -101,7 +101,7 @@
                                     'title' => 'Work Gloves',
                                     'description' => 'Heavy duty work gloves for construction safety',
                                     'price' => '$24.99',
-                                    'rating' => 4,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                     'cartUrl' => route('cart'),
                                 ],
@@ -110,7 +110,7 @@
                                     'title' => 'Circular Saw',
                                     'description' => 'Professional circular saw with laser guide',
                                     'price' => '$199.99',
-                                    'rating' => 5,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                     'cartUrl' => route('cart'),
                                 ],
@@ -119,7 +119,7 @@
                                     'title' => 'Tool Belt',
                                     'description' => 'Heavy duty tool belt with multiple pockets',
                                     'price' => '$39.99',
-                                    'rating' => 4,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                     'cartUrl' => route('cart'),
                                 ],
@@ -128,7 +128,7 @@
                                     'title' => 'Level Tool',
                                     'description' => 'Digital level tool for precise measurements',
                                     'price' => '$79.99',
-                                    'rating' => 5,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                     'cartUrl' => route('cart'),
                                 ],
@@ -137,7 +137,7 @@
                                     'title' => 'Safety Boots',
                                     'description' => 'Steel toe safety boots for construction',
                                     'price' => '$129.99',
-                                    'rating' => 4,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                 ],
                             ];
@@ -162,7 +162,7 @@
                                     'title' => 'Power Drill Set',
                                     'description' => 'Professional grade power drill set with multiple attachments',
                                     'price' => '$299.99',
-                                    'rating' => 5,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                 ],
                                 [
@@ -170,7 +170,7 @@
                                     'title' => 'Safety Helmet',
                                     'description' => 'Industrial grade safety helmet with adjustable straps',
                                     'price' => '$49.99',
-                                    'rating' => 4,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                 ],
                                 [
@@ -178,7 +178,7 @@
                                     'title' => 'Measuring Tools',
                                     'description' => 'Precision measuring tools set for construction work',
                                     'price' => '$89.99',
-                                    'rating' => 5,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                 ],
                                 [
@@ -186,7 +186,7 @@
                                     'title' => 'Work Gloves',
                                     'description' => 'Heavy duty work gloves for construction safety',
                                     'price' => '$24.99',
-                                    'rating' => 4,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                 ],
                                 [
@@ -194,7 +194,7 @@
                                     'title' => 'Circular Saw',
                                     'description' => 'Professional circular saw with laser guide',
                                     'price' => '$199.99',
-                                    'rating' => 5,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                 ],
                                 [
@@ -202,7 +202,7 @@
                                     'title' => 'Tool Belt',
                                     'description' => 'Heavy duty tool belt with multiple pockets',
                                     'price' => '$39.99',
-                                    'rating' => 4,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                 ],
                                 [
@@ -210,7 +210,7 @@
                                     'title' => 'Level Tool',
                                     'description' => 'Digital level tool for precise measurements',
                                     'price' => '$79.99',
-                                    'rating' => 5,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                 ],
                                 [
@@ -218,7 +218,7 @@
                                     'title' => 'Safety Boots',
                                     'description' => 'Steel toe safety boots for construction',
                                     'price' => '$129.99',
-                                    'rating' => 4,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                 ],
                             ];
@@ -243,7 +243,7 @@
                                     'title' => 'Power Drill Set',
                                     'description' => 'Professional grade power drill set with multiple attachments',
                                     'price' => '$299.99',
-                                    'rating' => 5,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                 ],
                                 [
@@ -251,7 +251,7 @@
                                     'title' => 'Safety Helmet',
                                     'description' => 'Industrial grade safety helmet with adjustable straps',
                                     'price' => '$49.99',
-                                    'rating' => 4,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                 ],
                                 [
@@ -259,7 +259,7 @@
                                     'title' => 'Measuring Tools',
                                     'description' => 'Precision measuring tools set for construction work',
                                     'price' => '$89.99',
-                                    'rating' => 5,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                 ],
                                 [
@@ -267,7 +267,7 @@
                                     'title' => 'Work Gloves',
                                     'description' => 'Heavy duty work gloves for construction safety',
                                     'price' => '$24.99',
-                                    'rating' => 4,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                 ],
                                 [
@@ -275,7 +275,7 @@
                                     'title' => 'Circular Saw',
                                     'description' => 'Professional circular saw with laser guide',
                                     'price' => '$199.99',
-                                    'rating' => 5,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                 ],
                                 [
@@ -283,7 +283,7 @@
                                     'title' => 'Tool Belt',
                                     'description' => 'Heavy duty tool belt with multiple pockets',
                                     'price' => '$39.99',
-                                    'rating' => 4,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                 ],
                                 [
@@ -291,7 +291,7 @@
                                     'title' => 'Level Tool',
                                     'description' => 'Digital level tool for precise measurements',
                                     'price' => '$79.99',
-                                    'rating' => 5,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                 ],
                                 [
@@ -299,7 +299,7 @@
                                     'title' => 'Safety Boots',
                                     'description' => 'Steel toe safety boots for construction',
                                     'price' => '$129.99',
-                                    'rating' => 4,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                 ],
                             ];
@@ -324,7 +324,7 @@
                                     'title' => 'Power Drill Set',
                                     'description' => 'Professional grade power drill set with multiple attachments',
                                     'price' => '$299.99',
-                                    'rating' => 5,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                 ],
                                 [
@@ -332,7 +332,7 @@
                                     'title' => 'Safety Helmet',
                                     'description' => 'Industrial grade safety helmet with adjustable straps',
                                     'price' => '$49.99',
-                                    'rating' => 4,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                 ],
                                 [
@@ -340,7 +340,7 @@
                                     'title' => 'Measuring Tools',
                                     'description' => 'Precision measuring tools set for construction work',
                                     'price' => '$89.99',
-                                    'rating' => 5,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                 ],
                                 [
@@ -348,7 +348,7 @@
                                     'title' => 'Work Gloves',
                                     'description' => 'Heavy duty work gloves for construction safety',
                                     'price' => '$24.99',
-                                    'rating' => 4,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                 ],
                                 [
@@ -356,7 +356,7 @@
                                     'title' => 'Circular Saw',
                                     'description' => 'Professional circular saw with laser guide',
                                     'price' => '$199.99',
-                                    'rating' => 5,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                 ],
                                 [
@@ -364,7 +364,7 @@
                                     'title' => 'Tool Belt',
                                     'description' => 'Heavy duty tool belt with multiple pockets',
                                     'price' => '$39.99',
-                                    'rating' => 4,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                 ],
                                 [
@@ -372,7 +372,7 @@
                                     'title' => 'Level Tool',
                                     'description' => 'Digital level tool for precise measurements',
                                     'price' => '$79.99',
-                                    'rating' => 5,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                 ],
                                 [
@@ -380,7 +380,7 @@
                                     'title' => 'Safety Boots',
                                     'description' => 'Steel toe safety boots for construction',
                                     'price' => '$129.99',
-                                    'rating' => 4,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                 ],
                             ];
@@ -405,7 +405,7 @@
                                     'title' => 'Power Drill Set',
                                     'description' => 'Professional grade power drill set with multiple attachments',
                                     'price' => '$299.99',
-                                    'rating' => 5,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                 ],
                                 [
@@ -413,7 +413,7 @@
                                     'title' => 'Safety Helmet',
                                     'description' => 'Industrial grade safety helmet with adjustable straps',
                                     'price' => '$49.99',
-                                    'rating' => 4,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                 ],
                                 [
@@ -421,7 +421,7 @@
                                     'title' => 'Measuring Tools',
                                     'description' => 'Precision measuring tools set for construction work',
                                     'price' => '$89.99',
-                                    'rating' => 5,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                 ],
                                 [
@@ -429,7 +429,7 @@
                                     'title' => 'Work Gloves',
                                     'description' => 'Heavy duty work gloves for construction safety',
                                     'price' => '$24.99',
-                                    'rating' => 4,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                 ],
                                 [
@@ -437,7 +437,7 @@
                                     'title' => 'Circular Saw',
                                     'description' => 'Professional circular saw with laser guide',
                                     'price' => '$199.99',
-                                    'rating' => 5,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                 ],
                                 [
@@ -445,7 +445,7 @@
                                     'title' => 'Tool Belt',
                                     'description' => 'Heavy duty tool belt with multiple pockets',
                                     'price' => '$39.99',
-                                    'rating' => 4,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                 ],
                                 [
@@ -453,7 +453,7 @@
                                     'title' => 'Level Tool',
                                     'description' => 'Digital level tool for precise measurements',
                                     'price' => '$79.99',
-                                    'rating' => 5,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                 ],
                                 [
@@ -461,7 +461,7 @@
                                     'title' => 'Safety Boots',
                                     'description' => 'Steel toe safety boots for construction',
                                     'price' => '$129.99',
-                                    'rating' => 4,
+                                    'rating' => false,
                                     'detailUrl' => route('product-detail'),
                                 ],
                             ];

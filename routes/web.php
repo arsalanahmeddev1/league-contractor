@@ -67,8 +67,8 @@ Route::get('/login', function () {
 })->name('login');
 
 Route::get('/join', function () {
-    return view('screens.web.auth.join');
-})->name('join');
+    return view('screens.web.auth.register');
+})->name('register');
 
 Route::get('/forgot-password', function () {
     return view('screens.web.auth.forgot-password');

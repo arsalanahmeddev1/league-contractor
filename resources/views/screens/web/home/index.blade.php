@@ -6,21 +6,21 @@
         <div class="container">
             <div class="row align-items-center row-gap-40">
                 <div class="col-lg-6">
-                    <div class="mb-25">
+                    <div class="mb-25" data-aos="fade-up" data-aos-duration="1500" >
                         <span class="glass tagline mb-12">League Of Contractors</span>
                     </div>
-                    <h1 class="hd-lg mb-20">
+                    <h1 class="hd-lg mb-20" data-aos="fade-up" data-aos-duration="1500" >
                         The Digital Network for Licensed Contractors
                     </h1>
-                    <p class="para mb-20">Join a verified community where contractors refer, earn, and grow.</p>
-                    <div class="d-flex justify-content-center justify-content-lg-start align-items-center gap-20">
-                        <a href="" class="bootstrap btn btn-primary">Join the League</a>
-                        <a href="" class="bootstrap btn btn-outline d-flex align-items-center gap-10">Explore Members
+                    <p class="para mb-20" data-aos="fade-up" data-aos-duration="1500" >Join a verified community where contractors refer, earn, and grow.</p>
+                    <div class="d-flex justify-content-center justify-content-lg-start align-items-center gap-20" data-aos="fade-up" data-aos-duration="1500" >
+                        <a href="{{ route('register') }}" class="bootstrap btn btn-primary">Join the League</a>
+                        <a href="{{ route('marketplace') }}" class="bootstrap btn btn-outline d-flex align-items-center gap-10">Explore Members
                             <span class="text-white fs-16"><i class="fa-solid fa-arrow-right"></i></span></a>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="glass form-wrapper">
+                    <div class="glass form-wrapper" data-aos="fade-left" data-aos-duration="1500" >
                         <form action="">
                             <div class="row">
                                 <div class="col-12">
@@ -48,10 +48,10 @@
         <div class="container">
             <div class="row row-gap-40">
                 <div class="col-12">
-                    <h2 class="hd-lg text-center">How It Works</h2>
+                    <h2 class="hd-lg text-center" data-aos="fade-up" data-aos-duration="1500" >How It Works</h2>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="hiw-card">
+                    <div class="hiw-card" data-aos="fade-up" data-aos-duration="1500" >
                         <div class="glass circle-md circle-lg mb-40">
                             <img src="{{ asset('images/icons/join.svg') }}" alt="">
                         </div>
@@ -65,7 +65,7 @@
 
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="hiw-card">
+                    <div class="hiw-card" data-aos="fade-up" data-aos-duration="1500" >
                         <div class="glass circle-md circle-lg mb-40">
                             <img src="{{ asset('images/icons/refer.svg') }}" alt="">
                         </div>
@@ -80,7 +80,7 @@
 
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="hiw-card">
+                    <div class="hiw-card" data-aos="fade-up" data-aos-duration="1500" >
                         <div class="glass circle-md circle-lg mb-40">
                             <img src="{{ asset('images/icons/build.svg') }}" alt="">
                         </div>
@@ -100,10 +100,10 @@
         <div class="container">
             <div class="row row-gap-40 mb-40 text-center text-md-start align-items-center">
                 <div class="col-lg-6">
-                    <h2 class="hd-lg">Featured Contractors</h2>
+                    <h2 class="hd-lg" data-aos="fade-up" data-aos-duration="1500" >Featured Contractors</h2>
                 </div>
                 <div class="col-lg-6">
-                    <div class="arrows-wrapper d-flex align-items-center justify-content-center justify-md-content-end gap-20">
+                    <div class="arrows-wrapper d-flex align-items-center justify-content-center justify-md-content-end gap-20" data-aos="fade-up" data-aos-duration="1500" >
                         <button class="prev-arrow circle-md featured-prev-arrow">
                             <i class="fa-solid fa-arrow-left"></i>
                         </button>
@@ -221,13 +221,13 @@
         <div class="container">
             <div class="row row-gap-40 align-items-center text-center text-md-start">
                 <div class="col-lg-6">
-                    <div class="mb-20">
+                    <div class="mb-20" data-aos="fade-up" data-aos-duration="1500" >
                         <span class="glass tagline tagline-sm ">Top Rated Services</span>
                     </div>
-                    <h2 class="hd-lg">Service Categories</h2>
+                    <h2 class="hd-lg" data-aos="fade-up" data-aos-duration="1500" >Service Categories</h2>
                 </div>
                 <div class="col-lg-6">
-                    <div class="arrows-wrapper d-flex align-items-center justify-content-center justify-md-content-end gap-20">
+                    <div class="arrows-wrapper d-flex align-items-center justify-content-center justify-md-content-end gap-20" data-aos="fade-up" data-aos-duration="1500">
                         <button class="prev-arrow circle-md service-cat-prev-arrow">
                             <i class="fa-solid fa-arrow-left"></i>
                         </button>
@@ -237,7 +237,7 @@
                     </div>
                 </div>
                 <div class="service-cat-slider">
-                    <div class="service-cat-card">
+                    <div class="service-cat-card" data-aos="fade-up" data-aos-duration="1500" >
                         <div class="service-cat-img-wrapper position-relative mb-20">
                             <img src="{{ asset('images/service-cat-01.png') }}" alt="service-cat-image">
                         </div>
@@ -246,7 +246,7 @@
                             <a href="" class="bootstrap btn btn-outline">Find a Contractor Near You</a>
                         </div>
                     </div>
-                    <div class="service-cat-card">
+                    <div class="service-cat-card" data-aos="fade-up" data-aos-duration="1500">
                         <div class="service-cat-img-wrapper position-relative mb-20">
                             <img src="{{ asset('images/service-cat-02.png') }}" alt="service-cat-image">
                         </div>
@@ -255,7 +255,7 @@
                             <a href="" class="bootstrap btn btn-outline">Find a Contractor Near You</a>
                         </div>
                     </div>
-                    <div class="service-cat-card">
+                    <div class="service-cat-card" data-aos="fade-up" data-aos-duration="1500" >
                         <div class="service-cat-img-wrapper position-relative mb-20">
                             <img src="{{ asset('images/service-cat-01.png') }}" alt="service-cat-image">
                         </div>
@@ -272,17 +272,17 @@
         <div class="container">
             <div class="row text-center text-md-start row-gap-40">
                 <div class="col-lg-4">
-                    <div class="why-join-league-img-wrapper position-relative">
+                    <div class="why-join-league-img-wrapper position-relative" data-aos="fade-right" data-aos-duration="1500" >
                         <img src="{{ asset('images/wjl-01.png') }}" alt="why-join-league-image">
                         <img src="{{ asset('images/logo-02.png') }}" alt="why-join-league-icon"
                             class="position-absolute wjl-icon-01">
                     </div>
                 </div>
                 <div class="col-lg-8">
-                    <h2 class="hd-lg mb-40">Why Join the League</h2>
+                    <h2 class="hd-lg mb-40" data-aos="fade-up" data-aos-duration="1500" >Why Join the League</h2>
                     <div class="row row-gap-40">
                         <div class="col-lg-6">
-                            <div class="d-flex wjl-item align-items-center justify-content-center justify-content-md-start mb-20 gap-20">
+                            <div class="d-flex wjl-item align-items-center justify-content-center justify-content-md-start mb-20 gap-20" data-aos="fade-up" data-aos-duration="1500" >
                                 <div class="circle-md bg-secondry-theme">
                                     <i class="fa-solid fa-check"></i>
                                 </div>
@@ -293,29 +293,29 @@
                             </p>
                         </div>
                         <div class="col-lg-6">
-                            <div class="d-flex wjl-item align-items-center justify-content-center justify-content-md-start mb-20 gap-20">
+                            <div class="d-flex wjl-item align-items-center justify-content-center justify-content-md-start mb-20 gap-20" data-aos="fade-up" data-aos-duration="1500">
                                 <div class="circle-md bg-secondry-theme">
                                     <i class="fa-solid fa-check"></i>
                                 </div>
                                 <h4 class="hd-lg hd-sm hd-45">Referral & Rebate System</h4>
                             </div>
-                            <p class="para">
+                            <p class="para" data-aos="fade-up" data-aos-duration="1500">
                                 Earn rewards and rebates for every successful referral through our transparent tracking system.
                             </p>
                         </div>
                         <div class="col-lg-6">
-                            <div class="d-flex wjl-item align-items-center justify-content-center justify-content-md-start mb-20 gap-20">
+                            <div class="d-flex wjl-item align-items-center justify-content-center justify-content-md-start mb-20 gap-20" data-aos="fade-up" data-aos-duration="1500" >
                                 <div class="circle-md bg-secondry-theme">
                                     <i class="fa-solid fa-check"></i>
                                 </div>
                                 <h4 class="hd-lg hd-sm hd-45">Marketplace Access</h4>
                             </div>
-                            <p class="para">
+                            <p class="para" data-aos="fade-up" data-aos-duration="1500" >
                                 Buy and sell products or services within a secure, members-only environment.
                             </p>
                         </div>
                         <div class="col-lg-6">
-                            <div class="d-flex wjl-item align-items-center justify-content-center justify-content-md-start mb-20 gap-20">
+                            <div class="d-flex wjl-item align-items-center justify-content-center justify-content-md-start mb-20 gap-20" data-aos="fade-up" data-aos-duration="1500">
                                 <div class="circle-md bg-secondry-theme">
                                     <i class="fa-solid fa-check"></i>
                                 </div>
@@ -335,12 +335,12 @@
         <div class="container">
             <div class="jl-lg-card position-relative">
                 <div class="row row-gap-40 justify-content-center justify-content-md-start text-center text-md-start">
-                    <div class="col-9">
+                    <div class="col-9" data-aos="fade-up" data-aos-duration="1500" >
                         <h2 class="hd-lg mb-10">Join the League and Start Earning Rebates Today.</h2>
-                        <a href="" class="btn btn-black">Join the League</a>
+                        <a href="" class="btn btn-black" data-aos="fade-up" data-aos-duration="1500" >Join the League</a>
                     </div>
                 </div>
-                <div class="jl-lg-card-img-wrapper position-absolute bottom-0 d-none d-md-block">
+                <div class="jl-lg-card-img-wrapper position-absolute bottom-0 d-none d-md-block" data-aos="fade-left" data-aos-duration="1500" >
                     <img src="{{ asset('images/jl-right.png') }}" alt="jl-lg-card-image">
                 </div>
             </div>
@@ -350,26 +350,26 @@
         <div class="container">
 
             <div class="row text-center text-md-start row-gap-40 flex-column-reverse flex-md-row">
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1500">
                     <h2 class="hd-lg mb-20">
                         ABOUT US
                     </h2>
                     <ul class="about-us-list d-flex row-gap-40 flex-column">
-                        <li class="about-us-list-item">
+                        <li class="about-us-list-item" data-aos="fade-up" data-aos-duration="1500">
                             <span class="about-us-list-item-title hd-sm mb-10">Mission</span>
                             <p class="about-us-list-item-description para">
                                 To empower licensed contractors through a verified digital ecosystem that encourages
                                 collaboration, trust, and shared growth opportunities.
                             </p>
                         </li>
-                        <li class="about-us-list-item">
+                        <li class="about-us-list-item" data-aos="fade-up" data-aos-duration="1500">
                             <span class="about-us-list-item-title hd-sm mb-10">Vision</span>
                             <p class="about-us-list-item-description para">
-                                To revolutionize the traditional “word-of-mouth” contractor network into a modern,
+                                To revolutionize the traditional "word-of-mouth" contractor network into a modern,
                                 structured platform where professional relationships thrive.
                             </p>
                         </li>
-                        <li class="about-us-list-item">
+                        <li class="about-us-list-item" data-aos="fade-up" data-aos-duration="1500">
                             <span class="about-us-list-item-title hd-sm mb-10">Story</span>
                             <p class="about-us-list-item-description para">
                                 The League of Contractors was created to bridge the gap between trusted tradespeople and
@@ -380,7 +380,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1500" >
                     <div class="img-wrapper">
                         <img src="{{ asset('images/about-us-right.png') }}" alt="about-us-image">
                     </div>
@@ -391,7 +391,7 @@
     <section class="contractor-marketplace-sec sec-bg-light sec-gap-y">
         <div class="container">
             <div class="row mb-40">
-                <div class="col-8 text-center mx-auto">
+                <div class="col-8 text-center mx-auto" data-aos="fade-up" data-aos-duration="1500">
                     <h2 class="hd-lg mb-20">
                         The Contractor Marketplace
                     </h2>
@@ -403,7 +403,7 @@
             </div>
             <div class="row text-center text-md-start row-gap-40">
                 <div class="col-lg-3 col-md-6">
-                    <div class="con-place-card-wrapper">
+                    <div class="con-place-card-wrapper" data-aos="fade-up" data-aos-duration="1500" >
                         <div class="img-wrapper">
                             <img class="" src="{{ asset('images/con-place-01.png') }}"
                                 alt="Contractor Marketplace Image">
@@ -417,7 +417,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="con-place-card-wrapper">
+                    <div class="con-place-card-wrapper" data-aos="fade-up" data-aos-duration="1500" >
                         <div class="img-wrapper">
                             <img class="" src="{{ asset('images/con-place-02.png') }}"
                                 alt="Contractor Marketplace Image">
@@ -430,7 +430,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="con-place-card-wrapper">
+                    <div class="con-place-card-wrapper" data-aos="fade-up" data-aos-duration="1500" >
                         <div class="img-wrapper">
                             <img class="" src="{{ asset('images/con-place-03.png') }}"
                                 alt="Contractor Marketplace Image">
@@ -443,7 +443,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="con-place-card-wrapper">
+                    <div class="con-place-card-wrapper" data-aos="fade-up" data-aos-duration="1500" >
                         <div class="img-wrapper">
                             <img class="" src="{{ asset('images/con-place-04.png') }}"
                                 alt="Contractor Marketplace Image">
@@ -461,13 +461,13 @@
     <section class="partners-sec sec-dark-bg sec-gap-y">
         <div class="container">
             <div class="row mb-40 align-items-center row-gap-40 justify-content-between text-center text-md-start">
-                <div class="col-lg-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1500" >
                     <h2 class="hd-lg mb-10">PARTNERSHIPS</h2>
                     <p class="para">
                         Strategic Partners - Empowering Contractors with Expert Support.
                     </p>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1500" >
                     <p class="para">
                         We collaborate with leading service providers who specialize in helping contractors succeed - from
                         accountants to insurance brokers, marketers, and beyond.
@@ -478,56 +478,56 @@
                 <div class="col-lg-8">
                     <div class="row row-gap-20 align-items-center">
                         <div class="col-lg-3 col-md-4">
-                            <div class="partners-card-wrapper">
+                            <div class="partners-card-wrapper" data-aos="fade-up" data-aos-duration="1500" >
                                 <div class="img-wrapp text-center">
                                     <img src="{{ asset('images/partners/01.png') }}" alt="Partners Image">
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4">
-                            <div class="partners-card-wrapper">
+                            <div class="partners-card-wrapper" data-aos="fade-up" data-aos-duration="1500">
                                 <div class="img-wrapp text-center">
                                     <img src="{{ asset('images/partners/02.png') }}" alt="Partners Image">
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4">
-                            <div class="partners-card-wrapper">
+                            <div class="partners-card-wrapper" data-aos="fade-up" data-aos-duration="1500" >
                                 <div class="img-wrapp text-center">
                                     <img src="{{ asset('images/partners/03.png') }}" alt="Partners Image">
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4">
-                            <div class="partners-card-wrapper">
+                            <div class="partners-card-wrapper" data-aos="fade-up" data-aos-duration="1500">
                                 <div class="img-wrapp text-center">
                                     <img src="{{ asset('images/partners/04.png') }}" alt="Partners Image">
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4">
-                            <div class="partners-card-wrapper">
+                            <div class="partners-card-wrapper" data-aos="fade-up" data-aos-duration="1500" >
                                 <div class="img-wrapp text-center">
                                     <img src="{{ asset('images/partners/01.png') }}" alt="Partners Image">
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4">
-                            <div class="partners-card-wrapper">
+                            <div class="partners-card-wrapper" data-aos="fade-up" data-aos-duration="1500">
                                 <div class="img-wrapp text-center">
                                     <img src="{{ asset('images/partners/02.png') }}" alt="Partners Image">
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4">
-                            <div class="partners-card-wrapper">
+                            <div class="partners-card-wrapper" data-aos="fade-up" data-aos-duration="1500">
                                 <div class="img-wrapp text-center">
                                     <img src="{{ asset('images/partners/03.png') }}" alt="Partners Image">
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4">
-                            <div class="partners-card-wrapper">
+                            <div class="partners-card-wrapper" data-aos="fade-up" data-aos-duration="1500">
                                 <div class="img-wrapp text-center">
                                     <img src="{{ asset('images/partners/04.png') }}" alt="Partners Image">
                                 </div>
@@ -536,7 +536,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="d-flex flex-column align-items-center justify-content-center">
+                    <div class="d-flex flex-column align-items-center justify-content-center" data-aos="fade-up" data-aos-duration="1500" >
                         <h4 class="hd-lg hd-sm hd-45 mb-10">Join The Partners Network</h4>
                         <a href="" class="btn btn-secondary">Become a Partner</a>
                     </div>
@@ -547,17 +547,17 @@
     <section class="resources-sec sec-bg-light sec-gap-y">
         <div class="container">
             <div class="row row-gap-40 align-items-center justify-content-between">
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1500" >
                     <h2 class="hd-lg text-center text-md-start">RESOURCES</h2>
                 </div>
-                <div class="col-lg-6 text-center text-md-end">
+                <div class="col-lg-6 text-center text-md-end" data-aos="fade-up" data-aos-duration="1500" >
                     <a href="" class="btn btn-secondary">View All Resources</a>
                 </div>
                 <div class="col-lg-6">
                     <div
-                        class="resources-card-wrapper d-flex row-gap-20 align-items-center flex-column flex-md-row text-center text-md-start justify-content-between gap-20">
+                        class="resources-card-wrapper d-flex row-gap-20 align-items-center flex-column flex-md-row text-center text-md-start justify-content-between gap-20" data-aos="fade-up" data-aos-duration="1500" >
                         <div class="img-wrapper">
-                            <img src="{{ asset('images/con-place-01.png') }}" alt="Resources Image">
+                            <img src="{{ asset('images/resources-01.png') }}" alt="Resources Image">
                         </div>
                         <div class="resources-card-content">
                             <h4 class="hd-lg hd-sm hd-45 mb-20">Business Guides</h4>
@@ -571,9 +571,9 @@
                 </div>
                 <div class="col-lg-6">
                     <div
-                        class="resources-card-wrapper d-flex row-gap-20 align-items-center flex-column flex-md-row text-center text-md-start justify-content-between gap-20">
+                        class="resources-card-wrapper d-flex row-gap-20 align-items-center flex-column flex-md-row text-center text-md-start justify-content-between gap-20" data-aos="fade-up" data-aos-duration="1500">
                         <div class="img-wrapper">
-                            <img src="{{ asset('images/con-place-02.png') }}" alt="Resources Image">
+                            <img src="{{ asset('images/resources-02.png') }}" alt="Resources Image">
                         </div>
                         <div class="resources-card-content">
                             <h4 class="hd-lg hd-sm hd-45 mb-20">Legal & Compliance</h4>
@@ -587,9 +587,9 @@
                 </div>
                 <div class="col-lg-6">
                     <div
-                        class="resources-card-wrapper d-flex row-gap-20 align-items-center flex-column flex-md-row text-center text-md-start justify-content-between gap-20">
+                        class="resources-card-wrapper d-flex row-gap-20 align-items-center flex-column flex-md-row text-center text-md-start justify-content-between gap-20" data-aos="fade-up" data-aos-duration="1500" >
                         <div class="img-wrapper">
-                            <img src="{{ asset('images/con-place-03.png') }}" alt="Resources Image">
+                            <img src="{{ asset('images/resources-03.png') }}" alt="Resources Image">
                         </div>
                         <div class="resources-card-content">
                             <h4 class="hd-lg hd-sm hd-45 mb-20">Training & Education</h4>
@@ -603,9 +603,9 @@
                 </div>
                 <div class="col-lg-6">
                     <div
-                        class="resources-card-wrapper d-flex row-gap-20 align-items-center flex-column flex-md-row text-center text-md-start justify-content-between gap-20">
+                        class="resources-card-wrapper d-flex row-gap-20 align-items-center flex-column flex-md-row text-center text-md-start justify-content-between gap-20" data-aos="fade-up" data-aos-duration="1500">
                         <div class="img-wrapper">
-                            <img src="{{ asset('images/con-place-01.png') }}" alt="Resources Image">
+                            <img src="{{ asset('images/resources-04.png') }}" alt="Resources Image">
                         </div>
                         <div class="resources-card-content">
                             <h4 class="hd-lg hd-sm hd-45 mb-20">Member Stories</h4>
@@ -623,17 +623,17 @@
     <section class="contact-us-sec sec-dark-bg sec-gap-y">
         <div class="container">
             <div class="row mb-40">
-                <div class="col-6 mx-auto text-center">
+                <div class="col-6 mx-auto text-center" data-aos="fade-up" data-aos-duration="1500" >
                     <h2 class="hd-lg mb-20">CONTACT US</h2>
                     <p class="para">
-                        Have questions about membership, verification, or your account? Reach out to our team — we’re happy
+                        Have questions about membership, verification, or your account? Reach out to our team — we're happy
                         to help.
                     </p>
                 </div>
             </div>
             <div class="row row-gap-40">
                 <div class="col-lg-7 position-relative">
-                    <div class="d-flex flex-column flex-md-row row-gap-20 align-items-center justify-content-between conact-sec-card glass mb-40">
+                    <div class="d-flex flex-column flex-md-row row-gap-20 align-items-center justify-content-between conact-sec-card glass mb-40" data-aos="fade-right" data-aos-duration="1500" >
                         <div>
                             <span class="contact-sec-card-item"><span class="icon-wrapper me-2"><i
                                         class="fa-solid fa-envelope"></i></span> <a class="contact-sec-card-item-link"
@@ -650,7 +650,7 @@
                     </div>
                 </div>
                 <div class="col-lg-5">
-                    <div class="form-wrapper glass">
+                    <div class="form-wrapper glass" data-aos="fade-left" data-aos-duration="1500" >
                         <form action="">
                             <div class="row">
                                 <div class="col-12">

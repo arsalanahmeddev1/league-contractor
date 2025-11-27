@@ -11,7 +11,7 @@
                     </p>
                 </div>
                 <div class="col-lg-8">
-                    <div class="row row-gap-40">
+                    <div class="row row-gap-40 justify-content-between">
                         <div class="col-lg-4 col-xl-3">
                             <h4 class="secondary-list-title">Quick Links</h4>
                             <ul class="secondary-list">
@@ -32,17 +32,15 @@
                                 <li><a href="javascript:;">Verification Policy</a></li>
                             </ul>
                         </div>
-                        <div class="col-lg-2">
-                            <h4 class="secondary-list-title">Social Media</h4>
-                            <ul class="secondary-list">
-                                <li><a href="javascript:;">LinkedIn</a></li>
-                                <li><a href="javascript:;">Facebook</a></li>
-                                <li><a href="javascript:;">Instagram</a></li>
-                            </ul>
-                        </div>
                         <div class="col-lg-4">
                             <h4 class="secondary-list-title">Contact</h4>
-                            <span class="contact-sec-card-item d-flex align-items-center"><span class="icon-wrapper me-2 text-primary-theme"><i class="fa-solid fa-envelope"></i></span> <a class="contact-sec-card-item-link" href="mailto:support@leagueofcontractors.com">support@leagueofcontractors.com</a></span>
+                            <span class="contact-sec-card-item d-flex align-items-center mb-20 d-block"><span class="icon-wrapper me-2 text-primary-theme"><i class="fa-solid fa-envelope"></i></span> <a class="contact-sec-card-item-link" href="mailto:support@leagueofcontractors.com">support@leagueofcontractors.com</a></span>
+                            <h4 class="secondary-list-title">Social Media</h4>
+                            <ul class="social-links d-flex gap-10"> 
+                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>

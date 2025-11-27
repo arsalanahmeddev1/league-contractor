@@ -169,6 +169,66 @@
                                     'bookNowUrl' => route('book-now'),
                                     'showOnlineBadge' => false,
                                 ],
+                                [
+                                    'image' => asset('images/hero-bg.png'),
+                                    'contractorImage' => asset('images/resources-04.png'),
+                                    'contractorName' => 'XYZ Builders',
+                                    'serviceName' => 'ELECTRICAL',
+                                    'location' => 'Houston, Texas - 77001',
+                                    'serviceDetailUrl' => route('service-detail'),
+                                    'bookNowUrl' => route('book-now'),
+                                    'showOnlineBadge' => false,
+                                ],
+                                [
+                                    'image' => asset('images/hero-bg.png'),
+                                    'contractorImage' => asset('images/resources-04.png'),
+                                    'contractorName' => 'XYZ Builders',
+                                    'serviceName' => 'ELECTRICAL',
+                                    'location' => 'Houston, Texas - 77001',
+                                    'serviceDetailUrl' => route('service-detail'),
+                                    'bookNowUrl' => route('book-now'),
+                                    'showOnlineBadge' => false,
+                                ],
+                                [
+                                    'image' => asset('images/hero-bg.png'),
+                                    'contractorImage' => asset('images/resources-04.png'),
+                                    'contractorName' => 'XYZ Builders',
+                                    'serviceName' => 'ELECTRICAL',
+                                    'location' => 'Houston, Texas - 77001',
+                                    'serviceDetailUrl' => route('service-detail'),
+                                    'bookNowUrl' => route('book-now'),
+                                    'showOnlineBadge' => false,
+                                ],
+                                [
+                                    'image' => asset('images/hero-bg.png'),
+                                    'contractorImage' => asset('images/resources-04.png'),
+                                    'contractorName' => 'XYZ Builders',
+                                    'serviceName' => 'ELECTRICAL',
+                                    'location' => 'Houston, Texas - 77001',
+                                    'serviceDetailUrl' => route('service-detail'),
+                                    'bookNowUrl' => route('book-now'),
+                                    'showOnlineBadge' => false,
+                                ],
+                                [
+                                    'image' => asset('images/hero-bg.png'),
+                                    'contractorImage' => asset('images/resources-04.png'),
+                                    'contractorName' => 'XYZ Builders',
+                                    'serviceName' => 'ELECTRICAL',
+                                    'location' => 'Houston, Texas - 77001',
+                                    'serviceDetailUrl' => route('service-detail'),
+                                    'bookNowUrl' => route('book-now'),
+                                    'showOnlineBadge' => false,
+                                ],
+                                [
+                                    'image' => asset('images/hero-bg.png'),
+                                    'contractorImage' => asset('images/resources-04.png'),
+                                    'contractorName' => 'XYZ Builders',
+                                    'serviceName' => 'ELECTRICAL',
+                                    'location' => 'Houston, Texas - 77001',
+                                    'serviceDetailUrl' => route('service-detail'),
+                                    'bookNowUrl' => route('book-now'),
+                                    'showOnlineBadge' => false,
+                                ],
                             ];
                         @endphp
                         
@@ -177,6 +237,17 @@
                             @include('components.web.service-card', $service)
                         </div>
                         @endforeach
+                        <div class="col-12">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination d-flex align-items-center justify-content-center gap-10">
+                                    <li class="pagination-item"><a href="#" class="pagination-link">Prev</a></li>
+                                    <li class="pagination-item"><a href="#" class="pagination-link">1</a></li>
+                                    <li class="pagination-item"><a href="#" class="pagination-link">2</a></li>
+                                    <li class="pagination-item"><a href="#" class="pagination-link">3</a></li>
+                                    <li class="pagination-item"><a href="#" class="pagination-link">Next</a></li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
                 </div>
             </div>

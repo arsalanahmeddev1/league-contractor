@@ -41,7 +41,7 @@
                             <div class="col-lg-4 col-md-6">
                                 <div class="pkg-wrapper glass">
                                     <h4 class="hd-lg hd-sm mb-20">Basic Member</h4>
-                                    <h4 class="hd-lg price-text mb-30">$0<span class="fs-30">/month</span></h4>
+                                    <h4 class="hd-lg price-text mb-30">$20<span class="fs-30">/month</span></h4>
                                     <ul class="pkg-list position-relative">
                                         <li class="pkg-list-item">Create a limited profile</li>
                                         <li class="pkg-list-item">Browse verified members</li>

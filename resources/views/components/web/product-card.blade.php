@@ -1,4 +1,3 @@
-{{-- Product Card Component --}}
 {{-- Usage: @include('components.web.product-card', ['product' => $product]) --}}
 
 @props([
@@ -12,6 +11,7 @@
     'contractorImage' => null,
     'contractorName' => null,
     'showContractor' => false,
+    'showRating' => true,
 ])
 
 <div class="con-place-card-wrapper marketplace-card-wrapper">
@@ -35,6 +35,8 @@
         <div class="d-flex align-items-center justify-content-between mb-15">
             <span class="text-secondry-theme fs-20 fw-600">{{ $price }}</span>
             <div class="rating-stars text-secondry-theme">
+                {{-- add rating default true  --}}
+                @if($rating)
                 @for($i = 1; $i <= 5; $i++)
                     @if($i <= $rating)
                         <i class="fa-solid fa-star"></i>
@@ -42,6 +44,7 @@
                         <i class="fa-regular fa-star"></i>
                     @endif
                 @endfor
+                @endif
             </div>
         </div>
         <div class="d-flex align-items-center gap-10">

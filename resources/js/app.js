@@ -1,5 +1,16 @@
 import './bootstrap';
 
+// Initialize AOS (Animate On Scroll)
+if (typeof AOS !== 'undefined') {
+  AOS.init({
+    duration: 800,
+    easing: 'ease-in-out',
+    once: true,
+    offset: 100,
+    delay: 0,
+  });
+}
+
 $(document).ready(function () {
   $('.menu-toggle').click(function () {
     $('.primary-navs').toggleClass('active');
@@ -12,6 +23,8 @@ $(document).ready(function () {
     centerMode: true,
     centerPadding: '150px',
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
     prevArrow: $('.featured-prev-arrow'),
     nextArrow: $('.featured-next-arrow'),
     responsive: [
@@ -35,6 +48,9 @@ $(document).ready(function () {
     speed: 300,
     slidesToShow: 2,
     slidesToScroll: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
     prevArrow: $('.service-cat-prev-arrow'),
     nextArrow: $('.service-cat-next-arrow'),
     responsive: [
