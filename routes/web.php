@@ -62,19 +62,22 @@ Route::get('/checkout', function () {
 })->name('checkout');
 
 // Auth Routes
-Route::get('/login', function () {
-    return view('screens.web.auth.login');
-})->name('login');
+// Route::get('/login', function () {
+//     return view('screens.web.auth.login');
+// })->name('login');
 
 Route::get('/join', function () {
     return view('screens.web.auth.register');
 })->name('register');
 
 Route::get('/forgot-password', function () {
-    return view('screens.web.auth.forgot-password');
+    return view('screens.auth.forgot-password');
 })->name('forgot-password');
 
 // admin Routes
+Route::get('/admin', function () {
+    return view('screens.admin.dashboard.index');
+})->name('admin-dashboard');
 
 
 // auth routes
