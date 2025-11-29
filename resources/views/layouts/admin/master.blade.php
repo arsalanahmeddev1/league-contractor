@@ -6,9 +6,9 @@
 </head>
 
 <body class="dark-only position-relative">
-    {{-- <div class="loader-wrapper">
+    <div class="loader-wrapper">
         <div class="loader"></div>
-    </div> --}}
+    </div>
    
     <div class="tap-top"><i data-feather="chevrons-up"></i></div>
     <div class="page-wrapper compact-wrapper" id="pageWrapper">

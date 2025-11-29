@@ -15,11 +15,11 @@
             <i class="status_toggle middle sidebar-toggle" data-feather="grid"></i>
         </div>
     </div>
-    <div class="logo-icon-wrapper">
+    {{-- <div class="logo-icon-wrapper">
         <a href="">
             <img class="img-fluid" src="{{ asset('/images/logo.png') }}" alt="" />
         </a>
-    </div>
+    </div> --}}
     <nav class="sidebar-main">
         <div class="left-arrow" id="left-arrow">
             <i data-feather="arrow-left"></i>
@@ -27,9 +27,9 @@
         <div id="sidebar-menu">
             <ul class="sidebar-links" id="simple-bar">
                 <li class="back-btn">
-                    <a href="">
+                    {{-- <a href="">
                         <img class="img-fluid" src="{{ asset('images/logo.png') }}" alt="" />
-                    </a>
+                    </a> --}}
                     <div class="mobile-back text-end">
                         <span>Back</span><i class="fa-solid fa-angle-right ps-2" aria-hidden="true"></i>
                     </div>
@@ -39,7 +39,11 @@
                         <h6>Pinned</h6>
                     </div>
                 </li>
-                {{-- @foreach (dynamic_sidebar() as $module)
+                @php
+                    $userRole = Auth::user()->roles->first();
+                    $modules = $userRole ? dynamic_sidebar($userRole->id) : [];
+                @endphp
+                @foreach ($modules as $module)
                     <li class="sidebar-list">
                         <i class="fa-solid fa-thumbtack"></i>
                         <a href="{{ Route::has($module->route_name) ? route($module->route_name) : 'javascript:void(0)' }}" class="sidebar-link sidebar-title {{!empty($module->children) ? '' : 'link-nav'}}">
@@ -60,7 +64,7 @@
                             </ul>
                         @endif
                     </li>
-                @endforeach --}}
+                @endforeach
             </ul>
         </div>
         <div class="right-arrow" id="right-arrow">

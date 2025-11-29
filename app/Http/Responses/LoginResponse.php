@@ -11,6 +11,10 @@ class LoginResponse implements LoginResponseContract
         $user = auth()->user();
         $role = $user->getRoleNames()->first();
 
+        if (!$role) {
+            return redirect('/');
+        }
+
         if ($role === 'admin') {
             return redirect()->to('/admin/dashboard');
         }
@@ -19,7 +23,7 @@ class LoginResponse implements LoginResponseContract
             return redirect()->to('/contractor/dashboard');
         }
 
-        return redirect()->to('/visitor/dashboard');
+        return redirect('/');
     }
 }
 

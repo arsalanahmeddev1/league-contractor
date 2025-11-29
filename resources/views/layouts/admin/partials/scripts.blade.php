@@ -39,4 +39,9 @@
 <script src="{{ asset('assets/js/ajax-create.js') }}"></script>
 <script src="{{ asset('assets/js/ajax-update.js') }}"></script>
 <script src="{{ asset('assets/js/ajax-delete.js') }}"></script>
+<script>
+    $(".loader-wrapper").fadeOut("slow", function () {
+    $(this).remove();
+  });
+</script>
 @stack('scripts')

@@ -16,7 +16,7 @@ use App\Http\Responses\RegisterViewResponse as CustomRegisterViewResponse;
 use Laravel\Fortify\Contracts\RegisterResponse;
 use App\Http\Responses\RegisterResponse as CustomRegisterResponse;
 
-use Laravel\Fortify\Contracts\PasswordResetLinkViewResponse;
+use Laravel\Fortify\Contracts\RequestPasswordResetLinkViewResponse;
 use App\Http\Responses\ForgotPasswordViewResponse;
 
 class AppServiceProvider extends ServiceProvider
@@ -32,8 +32,9 @@ class AppServiceProvider extends ServiceProvider
         // AFTER REGISTER REDIRECT
         $this->app->singleton(RegisterResponse::class, CustomRegisterResponse::class);
 
+        // Forgot Password View Response
         $this->app->singleton(
-            PasswordResetLinkViewResponse::class,
+            RequestPasswordResetLinkViewResponse::class,
             ForgotPasswordViewResponse::class
         );
     }

@@ -61,23 +61,39 @@ Route::get('/checkout', function () {
     return view('screens.web.checkout.index');
 })->name('checkout');
 
+Route::get('/profile', function () {
+    return view('screens.web.profile.index');
+})->middleware('auth')->name('profile');
+
 // Auth Routes
 // Route::get('/login', function () {
 //     return view('screens.web.auth.login');
 // })->name('login');
 
-Route::get('/join', function () {
-    return view('screens.web.auth.register');
-})->name('register');
+// Route::get('/join', function () {
+//     return view('screens.web.auth.register');
+// })->name('register');
 
-Route::get('/forgot-password', function () {
-    return view('screens.auth.forgot-password');
-})->name('forgot-password');
+// Route::get('/forgot-password', function () {
+//     return view('screens.auth.forgot-password');
+// })->name('forgot-password');
 
 // admin Routes
 Route::get('/admin', function () {
     return view('screens.admin.dashboard.index');
-})->name('admin-dashboard');
+})->name('dashboard');
 
 
 // auth routes
+
+
+
+Route::get('/route-clear', function () {
+    Artisan::call('route:clear');
+    Artisan::call('view:clear');
+    Artisan::call('cache:clear');
+    Artisan::call('config:clear');
+    Artisan::call('config:cache');
+    $cache = 'Route cache cleared <br /> View cache cleared <br /> Cache cleared <br /> Config cleared <br /> Config cache cleared';
+    return $cache;
+});

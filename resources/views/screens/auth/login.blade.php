@@ -52,7 +52,7 @@
                                             Remember me
                                         </label>
                                     </div>
-                                    <a href="{{ route('forgot-password') }}" class="text-secondry-theme fs-14">Forgot Password?</a>
+                                    <a href="{{ route('password.request') }}" class="text-secondry-theme fs-14">Forgot Password?</a>
                                 </div>
 
                                 <div class="field-wrapper mb-20">

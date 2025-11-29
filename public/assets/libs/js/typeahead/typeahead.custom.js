@@ -93,24 +93,24 @@
       source: states,
     }
   );
-  var countries = new Bloodhound({
-    datumTokenizer: Bloodhound.tokenizers.whitespace,
-    queryTokenizer: Bloodhound.tokenizers.whitespace,
-    prefetch: "../assets/js/typeahead/data/countries.json",
-  });
-  $("#prefetch .typeahead").typeahead(null, {
-    name: "countries",
-    source: countries,
-  });
-  var bestPictures = new Bloodhound({
-    datumTokenizer: Bloodhound.tokenizers.obj.whitespace("value"),
-    queryTokenizer: Bloodhound.tokenizers.whitespace,
-    prefetch: "./../assets/js/typeahead/data/films/post_1960.json",
-    remote: {
-      url: "../assets/js/typeahead/data/films/queries/%QUERY.json",
-      wildcard: "%QUERY",
-    },
-  });
+  // var countries = new Bloodhound({
+  //   datumTokenizer: Bloodhound.tokenizers.whitespace,
+  //   queryTokenizer: Bloodhound.tokenizers.whitespace,
+  //   prefetch: "../assets/js/typeahead/data/countries.json",
+  // });
+  // $("#prefetch .typeahead").typeahead(null, {
+  //   name: "countries",
+  //   source: countries,
+  // });
+  // var bestPictures = new Bloodhound({
+  //   datumTokenizer: Bloodhound.tokenizers.obj.whitespace("value"),
+  //   queryTokenizer: Bloodhound.tokenizers.whitespace,
+  //   prefetch: "./../assets/js/typeahead/data/films/post_1960.json",
+  //   remote: {
+  //     url: "../assets/js/typeahead/data/films/queries/%QUERY.json",
+  //     wildcard: "%QUERY",
+  //   },
+  // });
   $("#remote .typeahead").typeahead(null, {
     name: "best-pictures",
     display: "value",

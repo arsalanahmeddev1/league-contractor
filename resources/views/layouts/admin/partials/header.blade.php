@@ -1,39 +1,11 @@
 <div class="page-header">
     <div class="header-wrapper row m-0">
-        <form class="form-inline search-full col" action="#" method="get">
-            <div class="form-group w-100">
-                <div class="Typeahead Typeahead--twitterUsers">
-                    <div class="u-posRelative">
-                        <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text"
-                            placeholder="Search Anything Here..." name="q" title="" autofocus />
-                        <div class="spinner-border Typeahead-spinner" role="status">
-                            <span class="sr-only">Loading...</span>
-                        </div>
-                        <i class="close-search" data-feather="x"></i>
-                    </div>
-                    <div class="Typeahead-menu"></div>
-                </div>
-            </div>
-        </form>
-        <div class="header-logo-wrapper col-auto p-0">
-            <div class="logo-wrapper">
-                <a href="index.html"><img class="img-fluid for-light" src="../assets/images/logo/logo.png"
-                        alt="" /><img class="img-fluid for-dark" src="../assets/images/logo/logo_dark.png"
-                        alt="" /></a>
-            </div>
-            <div class="toggle-sidebar">
-                <i class="status_toggle middle sidebar-toggle" data-feather="align-center"></i>
-            </div>
-        </div>
-        <div class="col-xxl-5 col-xl-6 col-md-5 col-4">
-            {{-- <h3>Dashboard</h3> --}}
-            {{-- <h3>
-                @php
-                    $user = Auth::user();
-                    $roleName = $user ? $user->getRoleNames()->first() : null;
-                @endphp
-                {{ $roleName ? \Illuminate\Support\Str::title(str_replace('_', ' ', $roleName)) : 'Dashboard' }}
-            </h3> --}}
+        <div class="col-4">
+            @php
+                $userRole = Auth::user()->roles->first();
+                $roleName = $userRole ? $userRole->name : 'No Role';
+            @endphp
+            <h3 class="">{{ \Illuminate\Support\Str::title(str_replace('_', ' ', $roleName)) }}</h3>
         </div>
         <div class="nav-right col-xxl-7 col-xl-6 col-md-7 col-8 pull-right right-header p-0 ms-auto">
             <ul class=
@@ -110,7 +82,7 @@
                             <a href="{{ route('home') }}"><i data-feather="globe"></i><span>Website </span></a>
                         </li>
                         <li>
-                            <a href=""><i data-feather="user"></i><span>Edit Profile
+                            <a href="{{ route('profile') }}"><i data-feather="user"></i><span>Update Profile
                                 </span></a>
                         </li>
                         <li>
@@ -154,9 +126,4 @@
     </div>
 </div>
 
-{{-- <script src="{{ asset('assets/libs/js/jquery.min.js') }}"></script>
-<script>
-    $(".loader-wrapper").fadeOut("slow", function () {
-    $(this).remove();
-  });
-</script> --}}
+
