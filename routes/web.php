@@ -1,8 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
-
+use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
+use App\Http\Controllers\MembershipController;
+use App\Http\Controllers\UsersController;
 
 // Web Routes
 Route::get('/', function () {
@@ -65,23 +66,26 @@ Route::get('/profile', function () {
     return view('screens.web.profile.index');
 })->middleware('auth')->name('profile');
 
-// Auth Routes
-// Route::get('/login', function () {
-//     return view('screens.web.auth.login');
-// })->name('login');
 
-// Route::get('/join', function () {
-//     return view('screens.web.auth.register');
-// })->name('register');
+// admin routes 
+// Route::middleware(['auth', 'role:super_admin'])->group(function () {
+//     Route::get('/admin/dashboard', function () {
+//         return view('screens.admin.dashboard.admin');
+//     })->name('admin.dashboard');
+// });
+// Route::middleware(['auth', 'role:super_admin'])->group(function () {
+//     Route::get('/admin/dashboard', function () {
+//         return view('screens.admin.dashboard.admin');
+//     })->name('admin.dashboard');
+// });
 
-// Route::get('/forgot-password', function () {
-//     return view('screens.auth.forgot-password');
-// })->name('forgot-password');
-
-// admin Routes
-Route::get('/admin', function () {
-    return view('screens.admin.dashboard.index');
-})->name('dashboard');
+Route::prefix('admin')->middleware('auth')->group(function () {
+    Route::get('/', [AdminDashboardController::class, 'index'])->name('admin.dashboard');
+    Route::get('/users', [UsersController::class, 'index'])->name('users.index');
+    Route::get('/users/create', [UsersController::class, 'create'])->name('users.create');
+    Route::post('/users', [UsersController::class, 'store'])->name('users.store');
+    Route::get('/memberships', [MembershipController::class, 'index'])->name('memberships.index');
+});
 
 
 // auth routes

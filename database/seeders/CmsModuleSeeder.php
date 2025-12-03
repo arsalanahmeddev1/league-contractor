@@ -37,7 +37,7 @@ class CmsModuleSeeder extends Seeder
         ]);
 
         $memberships = CmsModule::firstOrCreate([
-            'route_name' => 'memberships'
+            'route_name' => 'memberships.index'
         ], [
             'name' => 'Memberships',
             'icon' => 'fa-solid fa-users-gear',
@@ -72,9 +72,18 @@ class CmsModuleSeeder extends Seeder
         CmsModule::firstOrCreate([
             'route_name' => 'users.index'
         ], [
-            'name' => 'Users List',
+            'name' => 'All Users',
             'icon' => 'fa-solid fa-list-ul',
             'sort_order' => 1,
+            'status' => 'active',
+            'parent_id' => $users->id,
+        ]);
+        CmsModule::firstOrCreate([
+            'route_name' => 'users.create'
+        ], [
+            'name' => 'Add User',
+            'icon' => 'fa-solid fa-circle-plus',
+            'sort_order' => 2,
             'status' => 'active',
             'parent_id' => $users->id,
         ]);

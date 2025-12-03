@@ -66,14 +66,13 @@
                     <div class="d-flex profile-media">
                         <img class="b-r-10" src="../assets/images/dashboard/profile.png" alt="" />
                         <div class="flex-grow-1 d-flex align-items-center justify-content-between gap-1">
-                            {{-- <span>
+                            <span>
                                 @php
                                     $user = checkUser();
                                     $roleName = $user ? $user->getRoleNames()->first() : null;
                                 @endphp
                                 {{ $roleName ? \Illuminate\Support\Str::title(str_replace('_', ' ', $roleName)) : 'Not Set' }}
-                            </span> --}}
-                            <span>Super Admin</span>
+                            </span>
                             <i class="middle fa-solid fa-angle-down"></i>
                         </div>
                     </div>
@@ -86,7 +85,7 @@
                                 </span></a>
                         </li>
                         <li>
-                            <form method="POST" action="">
+                            <form method="POST" action="{{ route('logout') }}">
                                 @csrf
                                 <button type="submit" class="dropdown-item"><i data-feather="log-in"> </i><span>Log
                                         out</span></button>

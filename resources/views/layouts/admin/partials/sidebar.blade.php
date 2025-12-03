@@ -5,8 +5,7 @@
 <div class="sidebar-wrapper" data-sidebar-layout="stroke-svg">
     <div class="logo-wrapper">
         <a href="">
-            <img class="img-fluid for-light" src="{{ asset('/images/logo.png') }}" alt=""
-                style="max-width: 60px" />
+            <img class="img-fluid for-light" src="{{ asset('/images/logo.png') }}" alt="" style="max-width: 60px" />
             <img class="img-fluid for-dark" src="{{ asset('/images/logo.png') }}" alt=""
                 style="max-width: 60px" />
         </a>
@@ -46,7 +45,8 @@
                 @foreach ($modules as $module)
                     <li class="sidebar-list">
                         <i class="fa-solid fa-thumbtack"></i>
-                        <a href="{{ Route::has($module->route_name) ? route($module->route_name) : 'javascript:void(0)' }}" class="sidebar-link sidebar-title {{!empty($module->children) ? '' : 'link-nav'}}">
+                        <a href="{{ Route::has($module->route_name) ? route($module->route_name) : 'javascript:void(0)' }}"
+                            class="sidebar-link sidebar-title {{ !empty($module->children) ? '' : 'link-nav' }}">
                             <span class="theme-icons"><i class="{{ $module->icon }}"></i></span>
                             <span>{{ $module->name }}</span>
                             <div class="according-menu"><i class="fa-solid fa-angle-right"></i></div>
@@ -54,12 +54,18 @@
                         @if (!empty($module->children))
                             <ul class="sidebar-submenu">
                                 @foreach ($module->children as $child)
-                                    <li>
-                                        <a
-                                            href="{{ Route::has($child->route_name) ? route($child->route_name) : '#' }}">
-                                            {{ $child->name }}
-                                        </a>
-                                    </li>
+                                    {{-- Show index/list page ONLY if child has is_view = 1 AND parent has is_view = 1 --}}
+                                    @if ($child->is_view == 1 && $module->is_view == 1 && Str::contains($child->route_name, 'index'))
+                                        <li>
+                                            <a href="{{ route($child->route_name) }}">{{ $child->name }}</a>
+                                        </li>
+                                    @endif
+                                    {{-- Show add/create page ONLY if child has is_add = 1 AND parent has is_add = 1 --}}
+                                    @if ($child->is_add == 1 && $module->is_add == 1 && Str::contains($child->route_name, 'create'))
+                                        <li>
+                                            <a href="{{ route($child->route_name) }}">{{ $child->name }}</a>
+                                        </li>
+                                    @endif
                                 @endforeach
                             </ul>
                         @endif

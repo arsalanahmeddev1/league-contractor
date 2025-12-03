@@ -111,19 +111,19 @@
   //     wildcard: "%QUERY",
   //   },
   // });
-  $("#remote .typeahead").typeahead(null, {
-    name: "best-pictures",
-    display: "value",
-    source: bestPictures,
-  });
-  var nflTeams = new Bloodhound({
-    datumTokenizer: Bloodhound.tokenizers.obj.whitespace("team"),
-    queryTokenizer: Bloodhound.tokenizers.whitespace,
-    identify: function (obj) {
-      return obj.team;
-    },
-    prefetch: "../assets/js/typeahead/data/nfl.json",
-  });
+  // $("#remote .typeahead").typeahead(null, {
+  //   name: "best-pictures",
+  //   display: "value",
+  //   source: bestPictures,
+  // });
+  // var nflTeams = new Bloodhound({
+  //   datumTokenizer: Bloodhound.tokenizers.obj.whitespace("team"),
+  //   queryTokenizer: Bloodhound.tokenizers.whitespace,
+  //   identify: function (obj) {
+  //     return obj.team;
+  //   },
+  //   prefetch: "../assets/js/typeahead/data/nfl.json",
+  // });
   function nflTeamsWithDefaults(q, sync) {
     if (q === "") {
       sync(nflTeams.get("Detroit Lions", "Green Bay Packers", "Chicago Bears"));
@@ -131,51 +131,51 @@
       nflTeams.search(q, sync);
     }
   }
-  $("#custom-templates .typeahead").typeahead(null, {
-    name: "best-pictures",
-    display: "value",
-    source: bestPictures,
-    templates: {
-      empty: ['<div class="empty-message">', "unable to find any Best Picture winners that match the current query", "</div>"].join("\n"),
-      suggestion: Handlebars.compile("<div><span>{{value}}</span> – {{year}}</div>"),
-    },
-  });
-  var nbaTeams = new Bloodhound({
-    datumTokenizer: Bloodhound.tokenizers.obj.whitespace("team"),
-    queryTokenizer: Bloodhound.tokenizers.whitespace,
-    prefetch: "../assets/js/typeahead/data/nba.json",
-  });
-  var nhlTeams = new Bloodhound({
-    datumTokenizer: Bloodhound.tokenizers.obj.whitespace("team"),
-    queryTokenizer: Bloodhound.tokenizers.whitespace,
-    prefetch: "../assets/js/typeahead/data/nhl.json",
-  });
-  $("#multiple-datasets .typeahead").typeahead(
-    {
-      highlight: true,
-    },
-    {
-      name: "nba-teams",
-      display: "team",
-      source: nbaTeams,
-      templates: {
-        header: '<h3 class="league-name">NBA Teams</h3>',
-      },
-    },
-    {
-      name: "nhl-teams",
-      display: "team",
-      source: nhlTeams,
-      templates: {
-        header: '<h3 class="league-name">NHL Teams</h3>',
-      },
-    }
-  );
-  $("#scrollable-dropdown-menu .typeahead").typeahead(null, {
-    name: "countries",
-    limit: 10,
-    source: countries,
-  });
+  // $("#custom-templates .typeahead").typeahead(null, {
+  //   name: "best-pictures",
+  //   display: "value",
+  //   source: bestPictures,
+  //   templates: {
+  //     empty: ['<div class="empty-message">', "unable to find any Best Picture winners that match the current query", "</div>"].join("\n"),
+  //     suggestion: Handlebars.compile("<div><span>{{value}}</span> – {{year}}</div>"),
+  //   },
+  // });
+  // var nbaTeams = new Bloodhound({
+  //   datumTokenizer: Bloodhound.tokenizers.obj.whitespace("team"),
+  //   queryTokenizer: Bloodhound.tokenizers.whitespace,
+  //   prefetch: "../assets/js/typeahead/data/nba.json",
+  // });
+  // var nhlTeams = new Bloodhound({
+  //   datumTokenizer: Bloodhound.tokenizers.obj.whitespace("team"),
+  //   queryTokenizer: Bloodhound.tokenizers.whitespace,
+  //   prefetch: "../assets/js/typeahead/data/nhl.json",
+  // });
+  // $("#multiple-datasets .typeahead").typeahead(
+  //   {
+  //     highlight: true,
+  //   },
+  //   {
+  //     name: "nba-teams",
+  //     display: "team",
+  //     source: nbaTeams,
+  //     templates: {
+  //       header: '<h3 class="league-name">NBA Teams</h3>',
+  //     },
+  //   },
+  //   {
+  //     name: "nhl-teams",
+  //     display: "team",
+  //     source: nhlTeams,
+  //     templates: {
+  //       header: '<h3 class="league-name">NHL Teams</h3>',
+  //     },
+  //   }
+  // );
+  // $("#scrollable-dropdown-menu .typeahead").typeahead(null, {
+  //   name: "countries",
+  //   limit: 10,
+  //   source: countries,
+  // });
   var arabicPhrases = new Bloodhound({
     datumTokenizer: Bloodhound.tokenizers.whitespace,
     queryTokenizer: Bloodhound.tokenizers.whitespace,

@@ -62,7 +62,7 @@
                             <div class="profile-dropdown-menu">
                                 <ul>
                                     <li class="dropdown-item"><a class="dropdown-link"
-                                            href="{{ route('dashboard') }}">Dashboard</a></li>
+                                            href="">Dashboard</a></li>
                                     <li class="dropdown-item"><a class="dropdown-link"
                                             href="{{ route('profile') }}">Update Profile</a></li>
                                     <li class="dropdown-item">

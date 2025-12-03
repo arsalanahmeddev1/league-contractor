@@ -1,3 +1,5 @@
+{{-- super admin dashboard --}}
+
 @section('title', 'Dashboard')
 @extends('layouts.admin.master')
 @section('content')
@@ -29,8 +31,7 @@
                                     </div>
                                 </div>
                                 <div class="font-success f-w-500">
-                                    <i class="bookmark-search me-1" ></i><span
-                                        class="txt-success">+50%</span>
+                                    <i class="bookmark-search me-1"></i><span class="txt-success">+50%</span>
                                 </div>
                             </div>
                         </div>
@@ -85,13 +86,9 @@
                                     <div>
                                         <span class="f-light">Total Users</span>
                                         <h4>
-                                            <span class="counter" data-target="80">0</span>%
+                                            <span class="">{{ $totalUsers }}</span>
                                         </h4>
                                     </div>
-                                </div>
-                                <div class="font-danger f-w-500">
-                                    <i class="bookmark-search me-1" data-feather="trending-down"></i><span
-                                        class="txt-danger">-20%</span>
                                 </div>
                             </div>
                         </div>
@@ -193,7 +190,8 @@
                                     <div class="widget-round warning">
                                         <div class="bg-round">
                                             <svg>
-                                                <use href="{{ asset('/assets/libs/svg/icon-sprite.svg#c-profit') }}"></use>
+                                                <use href="{{ asset('/assets/libs/svg/icon-sprite.svg#c-profit') }}">
+                                                </use>
                                             </svg><svg class="half-circle svg-fill">
                                                 <use href="{{ asset('/assets/libs/svg/icon-sprite.svg#halfcircle') }}">
                                                 </use>

@@ -62,7 +62,7 @@ class CmsModule extends Model
     public static function getModules($role_id)
     {
         // Step 1: Get all modules that have permission for this role
-        $query = \DB::table('cms_module_permission AS cmp')
+        $query = DB::table('cms_module_permission AS cmp')
             ->join('cms_module AS cm', 'cm.id', '=', 'cmp.module_id')
             ->select(
                 'cm.id',
@@ -101,8 +101,32 @@ class CmsModule extends Model
         $main_modules = [];
         if (isset($modulesByParent[0])) {
             foreach ($modulesByParent[0] as $parent) {
-                // Attach submenu if exist
-                $parent->children = $modulesByParent[$parent->id] ?? [];
+                // Attach submenu if exist, but filter based on parent permissions
+                $children = $modulesByParent[$parent->id] ?? [];
+                $filteredChildren = [];
+                
+                foreach ($children as $child) {
+                    // For index/list routes: child needs is_view = 1 AND parent needs is_view = 1
+                    if (strpos($child->route_name, 'index') !== false) {
+                        if ($child->is_view == 1 && $parent->is_view == 1) {
+                            $filteredChildren[] = $child;
+                        }
+                    }
+                    // For create/add routes: child needs is_add = 1 AND parent needs is_add = 1
+                    elseif (strpos($child->route_name, 'create') !== false) {
+                        if ($child->is_add == 1 && $parent->is_add == 1) {
+                            $filteredChildren[] = $child;
+                        }
+                    }
+                    // For other routes, check if child has any permission
+                    else {
+                        if ($child->is_add == 1 || $child->is_view == 1 || $child->is_update == 1 || $child->is_delete == 1) {
+                            $filteredChildren[] = $child;
+                        }
+                    }
+                }
+                
+                $parent->children = $filteredChildren;
 
                 // ✅ Parent should appear if:
                 //  - itself has permission, OR

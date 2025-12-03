@@ -17,7 +17,7 @@ class CmsModulePermissions extends Seeder
         $permissions = [
             // Super Admin Role
             ['role_id' => 1, 'module_id' => 1, 'is_add' => 0, 'is_view' => 1, 'is_update' => 0, 'is_delete' => 0], // Dashboard
-            ['role_id' => 1, 'module_id' => 2, 'is_add' => 1, 'is_view' => 1, 'is_update' => 1, 'is_delete' => 1], // Users
+            ['role_id' => 1, 'module_id' => 2, 'is_add' => 0, 'is_view' => 1, 'is_update' => 0, 'is_delete' => 0], // Users
             ['role_id' => 1, 'module_id' => 3, 'is_add' => 1, 'is_view' => 1, 'is_update' => 1, 'is_delete' => 1], // Memberships
             // submenus
             ['role_id' => 1, 'module_id' => 4, 'is_add' => 0, 'is_view' => 1, 'is_update' => 1, 'is_delete' => 0], // Users List
