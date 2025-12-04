@@ -129,12 +129,12 @@ class CmsModule extends Model
                 $parent->children = $filteredChildren;
 
                 // ✅ Parent should appear if:
-                //  - itself has permission, OR
+                //  - itself has is_view = 1 (for sidebar visibility), OR
                 //  - it has visible children
-                $hasPermission = ($parent->is_add || $parent->is_view || $parent->is_update || $parent->is_delete);
+                $hasViewPermission = ($parent->is_view == 1);
                 $hasChildren = !empty($parent->children);
 
-                if ($hasPermission || $hasChildren) {
+                if ($hasViewPermission || $hasChildren) {
                     $main_modules[] = $parent;
                 }
             }

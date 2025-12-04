@@ -146,9 +146,12 @@ body.dark-only .toggle-sidebar svg {
 .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links {
     margin-top: 0;
 }
+body.dark-only .dropdown.custom-dropdown .dropdown-menu .dropdown-item:hover,
+.dark-only .dropdown.custom-dropdown .dropdown-toggle::after,
+.dark-only .user-list-wrapper .user-list-table table tbody tr td a:hover,
 .dark-only .nav-pills.nav-primary .nav-link, .nav-primary .nav-link {
     color: var(--default-color);
 }
-/* .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links li a.link-nav .according-menu {
-    display: block;
-} */
+.row-gap-20 {
+    row-gap: 20px;
+}

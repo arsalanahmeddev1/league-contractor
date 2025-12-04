@@ -4,6 +4,11 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
 use App\Http\Controllers\MembershipController;
 use App\Http\Controllers\UsersController;
+use App\Http\Controllers\ContractorController;
+use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\ReferralController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\OrderController;
 
 // Web Routes
 Route::get('/', function () {
@@ -85,6 +90,18 @@ Route::prefix('admin')->middleware('auth')->group(function () {
     Route::get('/users/create', [UsersController::class, 'create'])->name('users.create');
     Route::post('/users', [UsersController::class, 'store'])->name('users.store');
     Route::get('/memberships', [MembershipController::class, 'index'])->name('memberships.index');
+    Route::get('/contractors', [ContractorController::class, 'index'])->name('contractors.index');
+    Route::get('/contractors/create', [ContractorController::class, 'create'])->name('contractors.create');
+    Route::get('/services', [ServiceController::class, 'index'])->name('services.index');
+    Route::get('/services/create', [ServiceController::class, 'create'])->name('services.create');
+    Route::get('/referrals', [ReferralController::class, 'index'])->name('referrals.index');
+    Route::get('/referrals/create', [ReferralController::class, 'create'])->name('referrals.create');
+    Route::get('/products', [ProductController::class, 'index'])->name('products.index');
+    Route::get('/products/create', [ProductController::class, 'create'])->name('products.create');
+    Route::get('/orders', [OrderController::class, 'index'])->name('orders.index');
+
+
+
 });
 
 

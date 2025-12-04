@@ -10,9 +10,9 @@
                 style="max-width: 60px" />
         </a>
         <div class="back-btn"><i class="fa-solid fa-angle-left"></i></div>
-        <div class="toggle-sidebar">
+        {{-- <div class="toggle-sidebar">
             <i class="status_toggle middle sidebar-toggle" data-feather="grid"></i>
-        </div>
+        </div> --}}
     </div>
     {{-- <div class="logo-icon-wrapper">
         <a href="">
@@ -54,18 +54,9 @@
                         @if (!empty($module->children))
                             <ul class="sidebar-submenu">
                                 @foreach ($module->children as $child)
-                                    {{-- Show index/list page ONLY if child has is_view = 1 AND parent has is_view = 1 --}}
-                                    @if ($child->is_view == 1 && $module->is_view == 1 && Str::contains($child->route_name, 'index'))
                                         <li>
                                             <a href="{{ route($child->route_name) }}">{{ $child->name }}</a>
                                         </li>
-                                    @endif
-                                    {{-- Show add/create page ONLY if child has is_add = 1 AND parent has is_add = 1 --}}
-                                    @if ($child->is_add == 1 && $module->is_add == 1 && Str::contains($child->route_name, 'create'))
-                                        <li>
-                                            <a href="{{ route($child->route_name) }}">{{ $child->name }}</a>
-                                        </li>
-                                    @endif
                                 @endforeach
                             </ul>
                         @endif

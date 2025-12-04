@@ -27,7 +27,7 @@ class CmsModuleSeeder extends Seeder
         ]);
 
         $users = CmsModule::firstOrCreate([
-            'route_name' => 'users'
+            'route_name' => 'users-module'
         ], [
             'name' => 'Users',
             'icon' => 'fa-solid fa-users',
@@ -37,7 +37,7 @@ class CmsModuleSeeder extends Seeder
         ]);
 
         $memberships = CmsModule::firstOrCreate([
-            'route_name' => 'memberships.index'
+            'route_name' => 'memberships-module'
         ], [
             'name' => 'Memberships',
             'icon' => 'fa-solid fa-users-gear',
@@ -57,11 +57,51 @@ class CmsModuleSeeder extends Seeder
         ]);
 
         $referrals = CmsModule::firstOrCreate([
-            'route_name' => 'referral-system'
+            'route_name' => 'referrals-module'
         ], [
             'name' => 'Referrals',
             'icon' => 'fa-solid fa-share-nodes',
             'sort_order' => 5,
+            'status' => 'active',
+            'parent_id' => 0,
+        ]);
+
+        $contractors = CmsModule::firstOrCreate([
+            'route_name' => 'contractors-module'
+        ], [
+            'name' => 'Contractors',
+            'icon' => 'fa-solid fa-user-tie',
+            'sort_order' => 6,
+            'status' => 'active',
+            'parent_id' => 0,
+        ]);
+
+        $services = CmsModule::firstOrCreate([
+            'route_name' => 'services-module'
+        ], [
+            'name' => 'Services',
+            'icon' => 'fa-solid fa-screwdriver-wrench',
+            'sort_order' => 7,
+            'status' => 'active',
+            'parent_id' => 0,
+        ]);
+
+        $products = CmsModule::firstOrCreate([
+            'route_name' => 'products-module'
+        ], [
+            'name' => 'Products',
+            'icon' => 'fa-solid fa-boxes-packing',
+            'sort_order' => 8,
+            'status' => 'active',
+            'parent_id' => 0,
+        ]);
+        
+        $orders = CmsModule::firstOrCreate([
+            'route_name' => 'orders-module'
+        ], [
+            'name' => 'Orders',
+            'icon' => 'fa-solid fa-list-ul',
+            'sort_order' => 9,
             'status' => 'active',
             'parent_id' => 0,
         ]);
@@ -90,25 +130,24 @@ class CmsModuleSeeder extends Seeder
 
         // users submenu end
         CmsModule::firstOrCreate([
-            'route_name' => 'memberships.create'
+            'route_name' => 'memberships.index'
         ], [
-            'name' => 'Add User',
-            'icon' => 'fa-solid fa-circle-plus',
+            'name' => 'All Memberships',
+            'icon' => 'fa-solid fa-list-ul',
             'sort_order' => 2,
             'status' => 'active',
             'parent_id' => $memberships->id,
         ]);
 
         CmsModule::firstOrCreate([
-            'route_name' => 'payments.create'
+            'route_name' => 'referrals.index'
         ], [
-            'name' => 'Add Payment',
-            'icon' => 'fa-solid fa-credit-card',
-            'sort_order' => 2,
+            'name' => 'All Referrals',
+            'icon' => 'fa-solid fa-list-ul',
+            'sort_order' => 1,
             'status' => 'active',
-            'parent_id' => $payments->id,
+            'parent_id' => $referrals->id,
         ]);
-
         CmsModule::firstOrCreate([
             'route_name' => 'referrals.create'
         ], [
@@ -118,5 +157,64 @@ class CmsModuleSeeder extends Seeder
             'status' => 'active',
             'parent_id' => $referrals->id,
         ]);
+
+        CmsModule::firstOrCreate([
+            'route_name' => 'contractors.index'
+        ], [
+            'name' => 'All Contractors',
+            'icon' => 'fa-solid fa-list-ul',
+            'sort_order' => 1,
+            'status' => 'active',
+            'parent_id' => $contractors->id,
+        ]);
+        CmsModule::firstOrCreate([
+            'route_name' => 'contractors.create'
+        ], [
+            'name' => 'Add Contractor',
+            'icon' => 'fa-solid fa-user-tie',
+            'sort_order' => 2,
+            'status' => 'active',
+            'parent_id' => $contractors->id,
+        ]);
+
+        CmsModule::firstOrCreate([
+            'route_name' => 'services.index'
+        ], [
+            'name' => 'All Services',
+            'icon' => 'fa-solid fa-list-ul',
+            'sort_order' => 1,
+            'status' => 'active',
+            'parent_id' => $services->id,
+        ]);
+        CmsModule::firstOrCreate([
+            'route_name' => 'services.create'
+        ], [
+            'name' => 'Add Service',
+            'icon' => 'fa-solid fa-screwdriver-wrench',
+            'sort_order' => 2,
+            'status' => 'active',
+            'parent_id' => $services->id,
+        ]);
+        CmsModule::firstOrCreate([
+            'route_name' => 'products.index'
+        ], [
+            'name' => 'All Products',
+            'icon' => 'fa-solid fa-boxes-packing',
+            'sort_order' => 1,
+            'status' => 'active',
+            'parent_id' => $products->id,
+        ]);
+
+        CmsModule::firstOrCreate([
+            'route_name' => 'orders.index'
+        ], [
+            'name' => 'All Orders',
+            'icon' => 'fa-solid fa-list-ul',
+            'sort_order' => 1,
+            'status' => 'active',
+            'parent_id' => $orders->id,
+        ]);
+
+        
     }
 }

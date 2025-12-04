@@ -16,8 +16,9 @@ class DashboardController extends Controller
       $rolesById = $user->roles->first()->id;
       $authUser = auth()->user();
       $totalUsers = User::where('id', '!=', $authUser->id)->count();
+      $users = User::with('roles')->where('id', '!=', $authUser->id)->latest()->take(10)->get();
       if ($rolesById === 1) {
-         return view('screens.admin.dashboard.admin', compact('totalUsers'));
+         return view('screens.admin.dashboard.admin', compact('totalUsers', 'users'));
       } elseif ($rolesById === 2) {
          return view('screens.admin.dashboard.contractor', compact('totalUsers'));
       } elseif ($rolesById === 3) {
