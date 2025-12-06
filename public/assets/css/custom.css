@@ -155,3 +155,6 @@ body.dark-only .dropdown.custom-dropdown .dropdown-menu .dropdown-item:hover,
 .row-gap-20 {
     row-gap: 20px;
 }
+body.dark-only .alert-warning.custom-alert {
+    background-color: var(--primary-theme) !important;
+}

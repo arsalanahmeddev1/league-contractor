@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
          RolesAndUsersSeeder::class,
          CmsModuleSeeder::class,
          CmsModulePermissions::class,
+         PackageSeeder::class,
        ]);
     }
 }

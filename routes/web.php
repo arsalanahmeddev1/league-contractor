@@ -9,7 +9,9 @@ use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\ReferralController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\OrderController;
-
+use App\Http\Controllers\PackageController;
+use App\Http\Controllers\CheckoutPurchaseController;
+use App\Http\Controllers\CompanyController;
 // Web Routes
 Route::get('/', function () {
     return view('screens.web.home.index', ['isHome' => true]);
@@ -31,9 +33,9 @@ Route::get('/services/show', function () {
     return view('screens.web.services.show');
 })->name('service-detail');
 
-Route::get('/membership', function () {
-    return view('screens.web.membership.index');
-})->name('membership');
+// Route::get('/membership', function () {
+//     return view('screens.web.membership.index');
+// })->name('membership');
 
 Route::get('/referrals', function () {
     return view('screens.web.referrals.index');
@@ -71,6 +73,13 @@ Route::get('/profile', function () {
     return view('screens.web.profile.index');
 })->middleware('auth')->name('profile');
 
+Route::get('/memberships', [PackageController::class, 'index'])->name('packages.index');
+
+Route::get('/select-plan/{package}', [PackageController::class, 'select'])->name('package.select');
+
+Route::get('/checkout', [CheckoutPurchaseController::class, 'show'])->name('checkout');
+Route::post('/fake-payment', [CheckoutPurchaseController::class, 'fakePayment'])->name('fake.payment');
+
 
 // admin routes 
 // Route::middleware(['auth', 'role:super_admin'])->group(function () {
@@ -99,9 +108,8 @@ Route::prefix('admin')->middleware('auth')->group(function () {
     Route::get('/products', [ProductController::class, 'index'])->name('products.index');
     Route::get('/products/create', [ProductController::class, 'create'])->name('products.create');
     Route::get('/orders', [OrderController::class, 'index'])->name('orders.index');
-
-
-
+    Route::get('/complete-profile', [CompanyController::class, 'index'])->name('company-profile.index');
+    Route::post('/complete-profile', [CompanyController::class, 'store'])->name('company-profile.store');
 });
 
 

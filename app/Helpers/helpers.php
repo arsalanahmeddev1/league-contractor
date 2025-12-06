@@ -13,3 +13,23 @@ if (! function_exists('formatRole')) {
         return \Illuminate\Support\Str::of($roleName ?? 'Not Set')->replace('_', ' ')->title();
     }
 }
+
+if (! function_exists('isRole')) {
+    function isRole($role)
+    {
+        $user = Auth::user();
+        if (!$user) return false;
+
+        $userRole = $user->roles->first();
+
+        if (!$userRole) return false;
+
+        // If role passed is numeric → check id
+        if (is_numeric($role)) {
+            return $userRole->id == $role;
+        }
+
+        // If string → check role name
+        return $userRole->name === $role;
+    }
+}

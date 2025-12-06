@@ -3,7 +3,7 @@
         <div class="col-4">
             @php
                 $userRole = Auth::user()->roles->first();
-                $roleName = $userRole ? $userRole->name : 'No Role';
+                $roleName = $userRole ? $userRole->name : 'Customer';
             @endphp
             <h3 class="">{{ \Illuminate\Support\Str::title(str_replace('_', ' ', $roleName)) }}</h3>
         </div>
@@ -68,10 +68,10 @@
                         <div class="flex-grow-1 d-flex align-items-center justify-content-between gap-1">
                             <span>
                                 @php
-                                    $user = checkUser();
-                                    $roleName = $user ? $user->getRoleNames()->first() : null;
+                                    $userRole = Auth::user()->roles->first();
+                                    $roleName = $userRole ? $userRole->name : 'Customer';
                                 @endphp
-                                {{ $roleName ? \Illuminate\Support\Str::title(str_replace('_', ' ', $roleName)) : 'Not Set' }}
+                                    {{ Auth::user()->name }}
                             </span>
                             <i class="middle fa-solid fa-angle-down"></i>
                         </div>

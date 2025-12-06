@@ -25,6 +25,8 @@ class DashboardController extends Controller
          return view('screens.admin.dashboard.customer', compact('totalUsers'));
       } elseif ($rolesById === 4) {
          return view('screens.admin.dashboard.league-contractor', compact('totalUsers'));
+      } elseif ($rolesById === 5) {
+         return view('screens.admin.dashboard.individual-contractor', compact('totalUsers'));
       }
       return redirect()->route('login');
    }

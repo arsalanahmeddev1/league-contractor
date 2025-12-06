@@ -1,7 +1,29 @@
 <div class="container-fluid">
     <div class="page-title">
         <div class="row">
-
+            <div class="row mb-3">
+                <div class="col-12">
+                    @if (isRole(4) || isRole(2))
+                        @if (!$company || !$company->is_profile_completed)
+                            <div class="alert alert-warning custom-alert alert-dismissible fade show d-flex align-items-center justify-content-between"
+                                role="alert" style="background-color: #1d1d1d; border-color: #ffc107; color: #fff;">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa-solid fa-exclamation-triangle me-2" style="color: #ffc107;"></i>
+                                    <span>Please complete your profile To Activate Services and add Contractors</span>
+                                </div>
+                                <a href="{{ route('company-profile.index') }}" class="btn btn-warning btn-sm"
+                                    style="min-width: 140px;">Complete Profile</a>
+                            </div>
+                        @elseif($company->is_profile_completed && !$company->is_profile_approved)
+                            <div class="alert alert-info" style="background:#1d1d1d; border-color:#0dcaf0; color:#fff;">
+                                <i class="fa-solid fa-hourglass-half"></i>
+                                Your profile has been submitted for approval. Once approved, your services will be
+                                activated.
+                            </div>
+                        @endif
+                    @endif
+                </div>
+            </div>
             <div class="col-sm-6">
                 <h3>@yield('title', 'Dashboard')</h3>
             </div>

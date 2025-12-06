@@ -19,7 +19,7 @@
                         <li data-aos="fade-down" data-aos-duration="600" data-aos-delay="200"><a
                                 href="{{ route('services') }}">Services</a></li>
                         <li data-aos="fade-down" data-aos-duration="600" data-aos-delay="250"><a
-                                href="{{ route('membership') }}">Membership</a></li>
+                                href="{{ route('packages.index') }}">Membership</a></li>
                         <li class="position-relative" data-aos="fade-down" data-aos-duration="600" data-aos-delay="300">
                             <a href="#" class="dropdown-menu-btn">Marketplace <i class="fa-solid fa-chevron-down"
                                     style="font-size: 0.7em; margin-left: 5px;"></i></a>
@@ -52,17 +52,17 @@
                             <button class="profile-dropdown-btn">
                                 @php
                                     $userRole = Auth::user()->roles->first();
-                                    $roleName = $userRole ? $userRole->name : 'No Role';
+                                    $roleName = $userRole ? $userRole->name : 'Customer';
                                 @endphp
                                 <span class="">
-                                    {{ \Illuminate\Support\Str::title(str_replace('_', ' ', $roleName)) }}
+                                    {{ Auth::user()->name }}
                                 </span>
                                 <i class="fa-solid fa-angle-down"></i>
                             </button>
                             <div class="profile-dropdown-menu">
                                 <ul>
                                     <li class="dropdown-item"><a class="dropdown-link"
-                                            href="">Dashboard</a></li>
+                                            href="{{ route('admin.dashboard') }}">Dashboard</a></li>
                                     <li class="dropdown-item"><a class="dropdown-link"
                                             href="{{ route('profile') }}">Update Profile</a></li>
                                     <li class="dropdown-item">
